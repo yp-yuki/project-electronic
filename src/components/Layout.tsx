@@ -1,14 +1,15 @@
 import React from "react"
+import AppHeader from "./Common/Header"
+import AppFooter from "./Common/Footer"
 
 interface Props {
     children: React.ReactNode
 }
-const Layout: React.FC<Props> = ({ children }) => {
-    return (<div>
-        <header>导航栏</header>
+const AppLayout = ({ children }:Props) => {
+    return <div>
+        <AppHeader/>
         <main>{children}</main>
-        <footer>页脚</footer>
+        <AppFooter/>
     </div>
-    )
 }
-export default Layout
+export default AppLayout
