@@ -1,11 +1,24 @@
 @import '@styles/variables.less';
 @import '@styles/mixins.less';
 
-.cardBody{
+.cardBody {
     margin-bottom: @margin-lg;
 }
+
 :global {
     .ant-card .ant-card-body {
         padding: @padding-md;
+    }
+
+    .ant-card .ant-card-cover {
+        overflow: hidden;
+    }
+
+    .ant-card .ant-card-cover img {
+        transition: 0.2s;
+    }
+
+    .ant-card .ant-card-cover:hover img {
+        transform: scale(1.05);
     }
 }
