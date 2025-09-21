@@ -1,10 +1,10 @@
-import { createSlice, type PayloadAction } from "@reduxjs/toolkit"
+import { createSlice, type PayloadAction } from '@reduxjs/toolkit'
 
 interface userState{
     name: string,
     age: number
 }
-let initialState: userState = {
+const initialState: userState = {
     name: '',
     age: 30
 }

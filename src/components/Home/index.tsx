@@ -4,7 +4,7 @@ import Products from '../Products'
 import { useAppSelector } from '@/store/hooks'
 
 const Home = ()=>{
-    const state = useAppSelector(state=>state)
+    const state = useAppSelector(state=>state.userSlice)
     console.log(state)
     console.log(updateUser({name:'jo'}))
     return <div>

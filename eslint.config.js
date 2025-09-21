@@ -20,4 +20,10 @@ export default defineConfig([
       globals: globals.browser,
     },
   },
+  {
+    files: ['**/*.{js,jsx,ts,tsx}'],
+    rules: {
+      'quotes': ['error', 'single'], 
+    },
+  }
 ])

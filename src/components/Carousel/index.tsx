@@ -4,7 +4,7 @@ import styles from './index.module.less'
 const images = import.meta.glob('@/assets/img/*.gif', { eager: true })
 const carouselImages = Object.values(images).map((item: any, index) => ({
     src: item.default,
-    id: index + 1
+    id: index + Date.now()
 }))
 
 const AppCarousel = () => (
@@ -14,7 +14,6 @@ const AppCarousel = () => (
             carouselImages.map(img => (
                 <div className={styles.img} key={img.id}>
                     <img src={img.src} alt="" />
-                        出来了吗
                 </div>
             ))
         }

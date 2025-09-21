@@ -1,6 +1,6 @@
-import { Menu } from "antd"
-import type { MenuProps } from "antd"
-import { useLocation, useNavigate } from "react-router-dom"
+import { Menu } from 'antd'
+import type { MenuProps } from 'antd'
+import { useLocation, useNavigate } from 'react-router-dom'
 import styles from './index.module.less'
 
 type MenuItem = Required<MenuProps>['items'][number]

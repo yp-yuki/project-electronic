@@ -30,7 +30,7 @@
       "@utils/*": ["src/utils"],
       "@services/*": ["src/services/*"],
       "@assets/*": ["src/assests/*"],
-      "@mock/*": ["src/mock/*"],
+      "@mock/*": ["src/api/mock/*"],
       "@styles/*": ["src/styles/*"]
     }
   },
