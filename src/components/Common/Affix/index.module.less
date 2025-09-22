@@ -4,7 +4,7 @@
 .affix{
     .fix();
     bottom: 10%;
-    background-color: #fff;
+    background-color: @background-color-basic;
     border-radius: 12px 0 0 12px;
 }
 .icon{
@@ -16,4 +16,17 @@
     margin: 10px 8px;
     cursor: pointer;
     position: relative;
+}
+.num{
+    min-width: 14px;
+    height: 14px;
+    line-height: 14px;
+    position: absolute;
+    top: -4px;
+    right: 0;
+    background-color: #ff5000;
+    border-radius: 1000px;
+    color: @background-color-basic;
+    font-size: 10px;
+    text-align: center;
 }

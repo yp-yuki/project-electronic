@@ -9,15 +9,15 @@ const carouselImages = Object.values(images).map((item: any, index) => ({
 
 const AppCarousel = () => (
     <div className={styles.container}>
-    <Carousel style={{height:'400px'}} autoplay={{ dotDuration: true }} autoplaySpeed={5000}>
-        {
-            carouselImages.map(img => (
-                <div className={styles.img} key={img.id}>
-                    <img src={img.src} alt="" />
-                </div>
-            ))
-        }
-    </Carousel>
+        <Carousel className={styles.carouselCard} autoplay={{ dotDuration: true }} autoplaySpeed={5000}>
+            {
+                carouselImages.map(img => (
+                    <div key={img.id} className={styles.img}>
+                        <img src={img.src} alt="" />
+                    </div>
+                ))
+            }
+        </Carousel>
     </div>
 )
 

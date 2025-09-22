@@ -1,21 +1,25 @@
 @import '@styles/variables.less';
 @import '@styles/mixins.less';
 
-.cardBody {
-    margin-bottom: @margin-lg;
+.cardBody{
+    width: 260px;
+    height: 300px;
+    @media screen and (max-width: 910px) {
+        flex-grow: 1;
+    }
 }
-
 :global {
     .ant-card .ant-card-body {
         padding: @padding-md;
     }
 
     .ant-card .ant-card-cover {
+        border-radius: 8px;
         overflow: hidden;
     }
 
     .ant-card .ant-card-cover img {
-        transition: 0.2s;
+        transition: @transition-basic;
     }
 
     .ant-card .ant-card-cover:hover img {

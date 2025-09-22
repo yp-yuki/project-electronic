@@ -1,17 +1,20 @@
 import { Button, Card, Col, Row, Typography } from 'antd'
 import styles from './index.module.less'
 import type { Product } from '@/api/types'
+import { addItem } from '@/store/slices/cartSlice'
+import { useAppDispatch } from '@/hooks/hooks'
 
 const { Title } = Typography
 interface Props {
     item: Product
 }
 const ProductItem = ({ item }: Props) => {
+    const dispatch = useAppDispatch()
+    const onAddCart = (item: Product) => dispatch(addItem(item))
     return <Card
         key={item.id}
         className={styles.cardBody}
         hoverable
-        style={{ width: 280, height: 300 }}
         cover={
             <img
                 style={{ height: '210px' }}
@@ -25,7 +28,7 @@ const ProductItem = ({ item }: Props) => {
         <Row justify='space-between' align='middle'>
             <Col>¥99</Col>
             <Col>
-                <Button type='link'>购买</Button>
+                <Button type='link' onClick={() => onAddCart(item)}>购买</Button>
             </Col>
         </Row>
     </Card>

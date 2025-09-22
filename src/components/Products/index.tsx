@@ -3,7 +3,7 @@ import ProductItem from './ProductItem'
 import styles from './index.module.less'
 import { useState, useEffect } from 'react'
 import { type Product } from '@/api/types'
-import { productApi } from '@/api/productApi'
+import { productApi } from '@/types/api'
 import { message } from 'antd'
 
 const Products = () => {
