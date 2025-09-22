@@ -30,8 +30,8 @@ const cartSlice = createSlice({
                 state.totalCount++
             }
         },
-        decreaseItem: (state, action: PayloadAction<Product>) => {
-            const exsist = state.items.find(item => item.id === action.payload.id)
+        decreaseItem: (state, action: PayloadAction<number>) => {
+            const exsist = state.items.find(item => item.id === action.payload)
             if (!exsist) {
                 return
             }
@@ -40,9 +40,12 @@ const cartSlice = createSlice({
             if (exsist.count < 1) {
                 state.items = state.items.filter(item => item.id !== exsist.id)
             }
+        },
+        handleOpen:(state,action: PayloadAction<boolean>)=>{
+            state.isOpen = action.payload
         }
     }
 })
 
-export const { addItem, decreaseItem } = cartSlice.actions
+export const { addItem, decreaseItem,handleOpen } = cartSlice.actions
 export default cartSlice.reducer

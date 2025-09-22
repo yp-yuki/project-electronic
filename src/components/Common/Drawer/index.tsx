@@ -1,14 +1,16 @@
 import { Drawer } from "antd"
 import ShopCar from "../ShopCar"
-import { useState } from "react"
+import { useAppSelector,useAppDispatch } from "@/hooks/hooks"
+import { handleOpen } from "@/store/slices/cartSlice"
 
 const AppDrawer = () => {
-    const [open, setOpen] = useState(false)
+    const open = useAppSelector(state=>state.cartSlice.isOpen)
+    const dispatch = useAppDispatch()
     const onClose = () => {
-        setOpen(false)
+        dispatch(handleOpen(false))
     }
 
-    return <Drawer title="Basic Drawer" placement="right" onClose={onClose} open={open}>
+    return <Drawer title="购物车" placement="right" onClose={onClose} open={open}>
         <ShopCar layout="drawer" />
     </Drawer>
 }

@@ -11,7 +11,7 @@ const ShopCar = (props: Props) => {
     const items = useAppSelector(state => state.cartSlice.items)
     const dispatch = useAppDispatch()
     const addCart = (item: Product) => dispatch(addItem(item))
-    const removeCart = (item: Product) => dispatch(decreaseItem(item))
+    const removeCart = (item: number) => dispatch(decreaseItem(item))
     return <div className={styles.container}>
         {
             items.length > 0 ? (<ul className={styles.list}>
@@ -33,7 +33,7 @@ const ShopCar = (props: Props) => {
                                 <div className={styles['list-item-option']}>
                                     <div className={styles['list-item-price']}>¥{item.price}</div>
                                     <div className={styles['list-item-opt']}>
-                                        <div className={styles.btn} onClick={() => removeCart(item)}>-</div>
+                                        <div className={styles.btn} onClick={() => removeCart(item.id)}>-</div>
                                         <div className={styles['list-item-count']}>{item.count}</div>
                                         <div className={styles.btn} onClick={() => addCart(item)}>+</div>
                                     </div>
