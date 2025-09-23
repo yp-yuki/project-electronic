@@ -12,7 +12,7 @@ const ShopCar = (props: Props) => {
     const dispatch = useAppDispatch()
     const addCart = (item: Product) => dispatch(addItem(item))
     const removeCart = (item: number) => dispatch(decreaseItem(item))
-    return <div className={styles.container}>
+    return <div className={`${styles.container} ${props.layout === 'drawer' ? 'drawer-container' : ''}`}>
         {
             items.length > 0 ? (<ul className={styles.list}>
                 {
@@ -22,7 +22,7 @@ const ShopCar = (props: Props) => {
                                 <img src={item.image} alt="" />
                             </div>
                             <div className={styles['list-item-info']}>
-                                <Title title={item.name} ellipsis={{ rows: 1 }} level={5}>{item.name}</Title>
+                                <Title title={item.name} className={styles['list-item-title']} ellipsis={{ rows: 1 }} level={5}>{item.name}</Title>
                                 <div className={styles['list-item-desc']}>
                                     <div className={styles['list-item-wrap']}>
                                         <div>销量：{item.sales}</div>

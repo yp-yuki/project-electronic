@@ -26,7 +26,7 @@ const ProductItem = ({ item }: Props) => {
     >
         <Title title={item.name} ellipsis={{ rows: 1 }} level={5}>{item.name}</Title>
         <Row justify='space-between' align='middle'>
-            <Col>¥99</Col>
+            <Col>¥{item.price}</Col>
             <Col>
                 <Button type='link' onClick={() => onAddCart(item)}>购买</Button>
             </Col>

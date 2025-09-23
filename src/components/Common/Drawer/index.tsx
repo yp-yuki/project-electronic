@@ -1,7 +1,7 @@
-import { Drawer } from "antd"
-import ShopCar from "../ShopCar"
-import { useAppSelector,useAppDispatch } from "@/hooks/hooks"
-import { handleOpen } from "@/store/slices/cartSlice"
+import { Drawer } from 'antd'
+import ShopCar from '../ShopCar'
+import { useAppSelector,useAppDispatch } from '@/hooks/hooks'
+import { handleOpen } from '@/store/slices/cartSlice'
 
 const AppDrawer = () => {
     const open = useAppSelector(state=>state.cartSlice.isOpen)

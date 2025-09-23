@@ -20,7 +20,7 @@ const Products = () => {
         getProducts()
     }, [])
     return <div>
-        <PageHeader icon="src/assets/img/heart.png" title="精选好物" />
+        <PageHeader icon="/src/assets/img/heart.png" title="精选好物" />
         <div className={styles.container}>
             {
                 products.map(item => {

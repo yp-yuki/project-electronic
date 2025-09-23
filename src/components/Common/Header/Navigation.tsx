@@ -8,20 +8,19 @@ const AppNav = () => {
     const location = useLocation()
     const Items: MenuItem[] = [
         {
-            key: '/',
-            label: '首页'
+            key: '/mall/shop',
+            label: '商城'
         },
         {
-            key: '/shop',
+            key: '/mall/cart',
             label: '购物车'
         },
         {
             key: 'a',
-            label: '关于我们'
+            label: '帮助'
         }
     ]
     const handleMenuClick: MenuProps['onClick'] = item => {
-        console.log(item)
         navigate(item.key)
     }
     return <Menu mode="horizontal" className={styles.menu} selectedKeys={[location.pathname]} onClick={handleMenuClick} items={Items} />

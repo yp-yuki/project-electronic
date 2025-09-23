@@ -15,12 +15,12 @@ const AppAffix = () => {
     const cartCount = useAppSelector(state => state.cartSlice.totalCount)
     const dispatch = useAppDispatch()
     const images: imageType[] = [{
-        src: 'src/assets/img/affix/message.png',
+        src: '/src/assets/img/affix/message.png',
         title: '消息',
         num: true
     },
     {
-        src: 'src/assets/img/affix/shopcart.png',
+        src: '/src/assets/img/affix/shopcart.png',
         title: '购物车',
         num: true,
         count: cartCount,
@@ -29,12 +29,12 @@ const AppAffix = () => {
         }
     },
     {
-        src: 'src/assets/img/affix/contact.png',
+        src: '/src/assets/img/affix/contact.png',
         title: '联系我们',
         num: false
     },
     {
-        src: 'src/assets/img/affix/feedback.png',
+        src: '/src/assets/img/affix/feedback.png',
         title: '反馈',
         num: false
     }]
