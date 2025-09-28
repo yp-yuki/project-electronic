@@ -21,12 +21,12 @@ const ShopCar = (props: Props) => {
                             <div className={styles['list-item-img']}>
                                 <img src={item.image} alt="" />
                             </div>
-                            <div className={styles['list-item-info']}>
+                            <div className={`${styles['list-item-info']} ${props.layout === 'drawer' ? 'drawer-list-item-title' : ''}`}>
                                 <Title title={item.name} className={styles['list-item-title']} ellipsis={{ rows: 1 }} level={5}>{item.name}</Title>
                                 <div className={styles['list-item-desc']}>
                                     <div className={styles['list-item-wrap']}>
                                         <div>销量：{item.sales}</div>
-                                        <div>描述：{item.description}</div>
+                                        <div className={props.layout === 'drawer' ? 'drawer-des' : ''}>描述：{item.description}</div>
                                     </div>
 
                                 </div>

@@ -1,371 +1,412 @@
 [
     {
         "id": 1,
-        "name": "Apple/苹果 iPhone 15 Pro Max 5G全网通超视网膜XDR显示屏智能手机",
-        "price": 8999,
+        "name": "Nike/耐克 Air Jordan 1 Retro High OG 经典复刻板鞋运动鞋",
+        "price": 1299,
         "sales": 2850,
         "image": "/src/assets/img/pro/10001.jpg",
-        "description": "A17 Pro芯片，钛金属设计，动作按钮，4800万像素主摄",
-        "stock": 150
+        "description": "经典AJ1设计，优质皮革，缓震技术，多色可选",
+        "stock": 150,
+        "category": "服装鞋包"
     },
     {
         "id": 2,
-        "name": "HUAWEI/华为 Mate 60 Pro+ 卫星通话双向北斗卫星消息鸿蒙OS4.0",
-        "price": 7999,
-        "sales": 1920,
+        "name": "UNIQLO/优衣库 男士高级轻型羽绒服 便携保暖外套",
+        "price": 599,
+        "sales": 3920,
         "image": "/src/assets/img/pro/10002.jpg",
-        "description": "超可靠玄武架构，灵犀通信，方舟引擎，超光变XMAGE影像",
-        "stock": 120
+        "description": "轻量便携，保暖性强，可折叠收纳，多色可选",
+        "stock": 200,
+        "category": "服装鞋包"
     },
     {
         "id": 3,
-        "name": "Xiaomi/小米 14 Ultra 徕卡光学Summilux镜头大师人像专业摄影手机",
-        "price": 5999,
+        "name": "Adidas/阿迪达斯 三叶草OZWEEGO运动鞋 复古潮流",
+        "price": 899,
         "sales": 1560,
         "image": "/src/assets/img/pro/10003.jpg",
-        "description": "全新徕卡Summilux光学镜头，专业摄影套装，双向卫星通信",
-        "stock": 180
+        "description": "复古设计，舒适缓震，透气网面，时尚百搭",
+        "stock": 120,
+        "category": "服装鞋包"
     },
     {
         "id": 4,
-        "name": "Samsung/三星 Galaxy S24 Ultra 超视觉夜拍AI智能手机SPen书写",
-        "price": 8699,
+        "name": "李宁/中国李宁 韦德之道10篮球鞋 专业比赛",
+        "price": 1099,
         "sales": 980,
         "image": "/src/assets/img/pro/10004.jpg",
-        "description": "Galaxy AI，超视觉夜拍，SPen书写，2亿像素超清摄影",
-        "stock": 90
+        "description": "专业篮球鞋，回弹缓震，透气包裹，多配色",
+        "stock": 80,
+        "category": "服装鞋包"
     },
     {
         "id": 5,
-        "name": "DJI大疆 Air 3 双主摄旗舰航拍无人机4K/60fps全向避障长续航",
-        "price": 6988,
-        "sales": 1250,
+        "name": "ZARA 女士修身西装外套 职场通勤",
+        "price": 459,
+        "sales": 2250,
         "image": "/src/assets/img/pro/10005.jpg",
-        "description": "双主摄，全向避障，46分钟续航，4K/60fps HDR视频",
-        "stock": 80
+        "description": "修身剪裁，质感面料，职场百搭，多尺码",
+        "stock": 150,
+        "category": "服装鞋包"
     },
     {
         "id": 6,
-        "name": "SONY索尼 PlayStation5 PS5游戏主机光驱版4K高清游戏电视家用",
-        "price": 3899,
+        "name": "Apple/苹果 iPhone 15 Pro Max 5G全网通智能手机",
+        "price": 8999,
         "sales": 3560,
         "image": "/src/assets/img/pro/10006.jpg",
-        "description": "超高速SSD，自适应扳机，触觉反馈，3D音效，4K/120fps",
-        "stock": 200
+        "description": "A17 Pro芯片，钛金属设计，4800万像素主摄",
+        "stock": 180,
+        "category": "手机数码"
     },
     {
         "id": 7,
-        "name": "Nintendo任天堂 Switch OLED版游戏机便携家用电视模式续航增强",
-        "price": 2599,
-        "sales": 4280,
+        "name": "HUAWEI/华为 Mate 60 Pro+ 卫星通话鸿蒙OS4.0",
+        "price": 7999,
+        "sales": 1920,
         "image": "/src/assets/img/pro/10007.jpg",
-        "description": "7英寸OLED屏幕，64GB内置存储，增强音频，桌面模式",
-        "stock": 250
+        "description": "超可靠玄武架构，灵犀通信，超光变XMAGE影像",
+        "stock": 120,
+        "category": "手机数码"
     },
     {
         "id": 8,
-        "name": "Microsoft/微软 Xbox Series X 1TB游戏主机4K120fps高速游戏体验",
-        "price": 4199,
-        "sales": 1820,
+        "name": "Xiaomi/小米 14 Ultra 徕卡光学Summilux镜头",
+        "price": 5999,
+        "sales": 1560,
         "image": "/src/assets/img/pro/10008.jpg",
-        "description": "12TFLOPS处理能力，4K/120fps，快速恢复，智能分发",
-        "stock": 110
+        "description": "徕卡Summilux镜头，专业摄影套装，双向卫星通信",
+        "stock": 150,
+        "category": "手机数码"
     },
     {
         "id": 9,
-        "name": "Lenovo/联想 拯救者Y9000P 2024电竞游戏本13代酷睿i9RTX4060独显",
-        "price": 9999,
-        "sales": 1560,
+        "name": "Sony/索尼 WH-1000XM5 无线蓝牙降噪耳机",
+        "price": 2999,
+        "sales": 3250,
         "image": "/src/assets/img/pro/10009.jpg",
-        "description": "13代酷睿i9，RTX4060独显，16GB DDR5，1TB SSD，240Hz刷新率",
-        "stock": 95
+        "description": "HD降噪处理器，30小时续航，智能聆听",
+        "stock": 200,
+        "category": "手机数码"
     },
     {
         "id": 10,
-        "name": "ASUS/华硕 ROG枪神7 Plus超竞版18英寸电竞游戏本i9-13980HX RTX4080",
-        "price": 18999,
-        "sales": 720,
+        "name": "Apple/苹果 AirPods Pro (第二代) 主动降噪无线耳机",
+        "price": 1899,
+        "sales": 5620,
         "image": "/src/assets/img/pro/10010.jpg",
-        "description": "i9-13980HX，RTX4080，18英寸2.5K 240Hz，64GB DDR5，2TB SSD",
-        "stock": 45
+        "description": "主动降噪，自适应通透模式，MagSafe充电",
+        "stock": 300,
+        "category": "手机数码"
     },
     {
         "id": 11,
-        "name": "Apple/苹果 MacBook Pro 16英寸M3 Max芯片笔记本电脑剪辑设计",
-        "price": 19999,
-        "sales": 580,
+        "name": "美的 Midea 变频空调 新一级能效 智能家电",
+        "price": 3299,
+        "sales": 2850,
         "image": "/src/assets/img/pro/10011.jpg",
-        "description": "M3 Max芯片，16英寸Liquid视网膜XDR显示屏，40核GPU，128GB内存",
-        "stock": 35
+        "description": "新一级能效，智能控制，静音运行，快速制冷热",
+        "stock": 100,
+        "category": "家用电器"
     },
     {
         "id": 12,
-        "name": "HUAWEI/华为 MateBook X Pro 2024微绒典藏版13代酷睿i7轻薄笔记本",
-        "price": 11999,
-        "sales": 890,
+        "name": "海尔 Haier 双门冰箱 风冷无霜 节能静音",
+        "price": 4599,
+        "sales": 1920,
         "image": "/src/assets/img/pro/10012.jpg",
-        "description": "13代酷睿i7，32GB内存，2TB SSD，3.1K原色全面屏，微绒金属机身",
-        "stock": 60
+        "description": "风冷无霜，节能静音，大容量，智能温控",
+        "stock": 80,
+        "category": "家用电器"
     },
     {
         "id": 13,
-        "name": "Sony/索尼 WH-1000XM5 无线蓝牙降噪耳机头戴式智能免噪35小时续航",
+        "name": "小米 米家扫地机器人 扫拖一体 自动集尘",
         "price": 2999,
-        "sales": 3250,
+        "sales": 3560,
         "image": "/src/assets/img/pro/10013.jpg",
-        "description": "HD降噪处理器QN1，30小时续航，快速充电，智能聆听",
-        "stock": 180
+        "description": "LDS激光导航，自动集尘，AI避障，大电量",
+        "stock": 150,
+        "category": "家用电器"
     },
     {
         "id": 14,
-        "name": "Apple/苹果 AirPods Pro (第二代) MagSafe充电盒版主动降噪无线耳机",
-        "price": 1899,
-        "sales": 5620,
+        "name": "戴森 Dyson V12 Detect Slim 无线吸尘器",
+        "price": 4190,
+        "sales": 1250,
         "image": "/src/assets/img/pro/10014.jpg",
-        "description": "主动降噪，自适应通透模式，个性化空间音频，MagSafe充电",
-        "stock": 300
+        "description": "激光探测，轻量化设计，多种吸头，60分钟续航",
+        "stock": 90,
+        "category": "家用电器"
     },
     {
         "id": 15,
-        "name": "Bose QuietComfort 消噪耳塞II真无线蓝牙降噪耳机智能耳内音场调校",
-        "price": 2299,
-        "sales": 1980,
+        "name": "九阳 Joyoung 破壁机 静音多功能 料理机",
+        "price": 899,
+        "sales": 2980,
         "image": "/src/assets/img/pro/10015.jpg",
-        "description": "CustomTune智能耳内音场调校，主动降噪，IPX4防水，24小时续航",
-        "stock": 150
+        "description": "静音设计，多功能料理，自动清洗，大容量",
+        "stock": 200,
+        "category": "家用电器"
     },
     {
         "id": 16,
-        "name": "SAMSUNG/三星 Galaxy Watch6 Classic智能手表蓝牙通话血压心电图监测",
-        "price": 2899,
-        "sales": 1420,
+        "name": "欧莱雅 复颜抗皱紧致护肤套装 女士化妆品",
+        "price": 399,
+        "sales": 4250,
         "image": "/src/assets/img/pro/10016.jpg",
-        "description": "经典旋转表圈，血压心电图监测，睡眠教练，40小时续航",
-        "stock": 100
+        "description": "抗皱紧致，保湿滋润，改善细纹，套装礼盒",
+        "stock": 300,
+        "category": "美妆护肤"
     },
     {
         "id": 17,
-        "name": "Apple/苹果 Watch Ultra 2智能手表蜂窝版潜水登山越野跑步运动",
-        "price": 6499,
-        "sales": 980,
+        "name": "兰蔻 小黑瓶精华肌底液 修护保湿",
+        "price": 1080,
+        "sales": 1980,
         "image": "/src/assets/img/pro/10017.jpg",
-        "description": "钛金属表壳，双频GPS，潜水电脑，动作按钮，36小时续航",
-        "stock": 70
+        "description": "修护肌底，保湿滋润，改善肤质，多重功效",
+        "stock": 150,
+        "category": "美妆护肤"
     },
     {
         "id": 18,
-        "name": "HUAWEI/华为 WATCH GT 4智能手表蓝牙通话血氧监测运动健康管理",
-        "price": 1488,
+        "name": "雅诗兰黛 小棕瓶特润修护精华露",
+        "price": 980,
         "sales": 2560,
         "image": "/src/assets/img/pro/10018.jpg",
-        "description": "1.43英寸AMOLED屏幕，血氧监测，100+运动模式，14天续航",
-        "stock": 160
+        "description": "特润修护，抗老保湿，改善暗沉，夜间修护",
+        "stock": 180,
+        "category": "美妆护肤"
     },
     {
         "id": 19,
-        "name": "Nintendo/任天堂 Switch Pro控制器游戏手柄Joy-Con充电握把周边配件",
-        "price": 459,
-        "sales": 5890,
+        "name": "SK-II 神仙水护肤精华露 230ml",
+        "price": 1540,
+        "sales": 1420,
         "image": "/src/assets/img/pro/10019.jpg",
-        "description": "HD震动，运动控制，40小时续航，NFC功能，充电功能",
-        "stock": 320
+        "description": "PITERA精华，改善肤质，保湿修护，经典款",
+        "stock": 100,
+        "category": "美妆护肤"
     },
     {
         "id": 20,
-        "name": "SONY/索尼 DualSense无线控制器PS5游戏手柄自适应扳机触觉反馈",
-        "price": 529,
-        "sales": 4320,
+        "name": "资生堂 红腰子精华 红妍肌活精华露",
+        "price": 890,
+        "sales": 1890,
         "image": "/src/assets/img/pro/10020.jpg",
-        "description": "自适应扳机，触觉反馈，内置麦克风，创建按钮，12小时续航",
-        "stock": 280
+        "description": "肌活修护，增强肌肤免疫力，保湿维稳",
+        "stock": 120,
+        "category": "美妆护肤"
     },
     {
         "id": 21,
-        "name": "Razer雷蛇 黑寡妇蜘蛛V4专业版机械键盘RGB灯效电竞游戏办公专用",
-        "price": 1699,
-        "sales": 1250,
+        "name": "联想 拯救者Y9000P 2024电竞游戏本",
+        "price": 9999,
+        "sales": 1560,
         "image": "/src/assets/img/pro/10021.jpg",
-        "description": "雷蛇机械轴，RGB灯效，多功能控制旋钮，8个可编程按键",
-        "stock": 90
+        "description": "13代酷睿i9，RTX4060独显，16GB DDR5，1TB SSD",
+        "stock": 95,
+        "category": "电脑办公"
     },
     {
         "id": 22,
-        "name": "Logitech罗技 G PRO X SUPERLIGHT无线游戏鼠标轻量化设计HERO传感器",
-        "price": 999,
-        "sales": 2980,
+        "name": "Apple/苹果 MacBook Pro 16英寸M3 Max芯片",
+        "price": 19999,
+        "sales": 580,
         "image": "/src/assets/img/pro/10022.jpg",
-        "description": "63克轻量化设计，HERO 25K传感器，LIGHTSYNC RGB，70小时续航",
-        "stock": 180
+        "description": "M3 Max芯片，16英寸XDR显示屏，40核GPU",
+        "stock": 35,
+        "category": "电脑办公"
     },
     {
         "id": 23,
-        "name": "LG乐金 27GP950-B 27英寸NanoIPS电竞显示器4K144Hz1ms响应HDR600",
-        "price": 4999,
-        "sales": 980,
+        "name": "罗技 Logitech MX Keys 无线键盘",
+        "price": 599,
+        "sales": 2980,
         "image": "/src/assets/img/pro/10023.jpg",
-        "description": "4K Nano IPS，144Hz刷新率，1ms响应，HDR600，G-SYNC兼容",
-        "stock": 65
+        "description": "舒适打字，智能背光，多设备切换，持久续航",
+        "stock": 200,
+        "category": "电脑办公"
     },
     {
         "id": 24,
-        "name": "SAMSUNG/三星 Odyssey Neo G9 49英寸双2K曲面电竞显示器240HzMiniLED",
-        "price": 12999,
-        "sales": 420,
+        "name": "戴尔 Dell U2723QX 27英寸4K显示器",
+        "price": 3299,
+        "sales": 980,
         "image": "/src/assets/img/pro/10024.jpg",
-        "description": "49英寸1000R曲面，双2K分辨率，240Hz刷新率，MiniLED背光",
-        "stock": 30
+        "description": "4K分辨率，IPS Black面板，Type-C 90W",
+        "stock": 80,
+        "category": "电脑办公"
     },
     {
         "id": 25,
-        "name": "WD西部数据 My Passport Ultra 5TB移动硬盘USB3.0便携式外接存储",
-        "price": 1099,
-        "sales": 3250,
+        "name": "华为 MateStation S 台式电脑主机",
+        "price": 4599,
+        "sales": 1250,
         "image": "/src/assets/img/pro/10025.jpg",
-        "description": "5TB容量，USB3.0接口，自动备份软件，密码保护，256位AES加密",
-        "stock": 200
+        "description": "AMD处理器，8GB内存，512GB SSD，办公家用",
+        "stock": 100,
+        "category": "电脑办公"
     },
     {
         "id": 26,
-        "name": "SanDisk闪迪 Extreme Pro 1TB SDXC存储卡UHS-I V30 4K视频拍摄专用",
-        "price": 899,
-        "sales": 2850,
+        "name": "索尼 PlayStation5 PS5游戏主机",
+        "price": 3899,
+        "sales": 3560,
         "image": "/src/assets/img/pro/10026.jpg",
-        "description": "1TB容量，UHS-I，V30速度等级，4K视频拍摄，170MB/s读取",
-        "stock": 180
+        "description": "超高速SSD，自适应扳机，4K/120fps，光驱版",
+        "stock": 120,
+        "category": "游戏娱乐"
     },
     {
         "id": 27,
-        "name": "TP-LINK普联 AX6000 WiFi6无线路由器千兆端口Mesh组网智能家居",
-        "price": 799,
-        "sales": 3560,
+        "name": "任天堂 Switch OLED版游戏机",
+        "price": 2599,
+        "sales": 4280,
         "image": "/src/assets/img/pro/10027.jpg",
-        "description": "AX6000双频，8流WiFi6，2.5G网口，易展Mesh组网，OFDMA技术",
-        "stock": 220
+        "description": "7英寸OLED屏幕，64GB存储，便携家用",
+        "stock": 180,
+        "category": "游戏娱乐"
     },
     {
         "id": 28,
-        "name": "HUAWEI/华为 AX3 Pro千兆端口WiFi6+无线路由器凌霄四核处理器",
-        "price": 399,
-        "sales": 5890,
+        "name": "微软 Xbox Series X 1TB游戏主机",
+        "price": 4199,
+        "sales": 1820,
         "image": "/src/assets/img/pro/10028.jpg",
-        "description": "WiFi6+，3000Mbps，凌霄四核，NFC一碰连，4颗独立信号放大器",
-        "stock": 350
+        "description": "12TFLOPS处理能力，4K/120fps，快速恢复",
+        "stock": 90,
+        "category": "游戏娱乐"
     },
     {
         "id": 29,
-        "name": "JBL Pulse5音乐脉动五代蓝牙音箱360度LED炫光灯效IP67防水户外",
-        "price": 1899,
-        "sales": 1560,
+        "name": "雷蛇 黑寡妇蜘蛛V4机械键盘",
+        "price": 1699,
+        "sales": 1250,
         "image": "/src/assets/img/pro/10029.jpg",
-        "description": "360度LED炫光灯效，IP67防水防尘，PartyBoost多台串联，12小时续航",
-        "stock": 100
+        "description": "雷蛇机械轴，RGB灯效，多功能控制旋钮",
+        "stock": 100,
+        "category": "游戏娱乐"
     },
     {
         "id": 30,
-        "name": "SONY/索尼 SRS-XB43 EXTRA BASS无线蓝牙音箱派对灯光IP67防水户外",
-        "price": 1599,
-        "sales": 1820,
+        "name": "罗技 G PRO X SUPERLIGHT无线游戏鼠标",
+        "price": 999,
+        "sales": 2980,
         "image": "/src/assets/img/pro/10030.jpg",
-        "description": "EXTRA BASS，派对灯光，IP67防水，24小时续航，多台串联",
-        "stock": 120
+        "description": "63克轻量化，HERO传感器，70小时续航",
+        "stock": 150,
+        "category": "游戏娱乐"
     },
     {
         "id": 31,
-        "name": "Oral-B欧乐B iO9智能电动牙刷AI定制洁齿方案圆形刷头牙龈护理",
-        "price": 1999,
-        "sales": 2250,
+        "name": "乐高 LEGO 星球大战系列 千年隼",
+        "price": 1699,
+        "sales": 980,
         "image": "/src/assets/img/pro/10031.jpg",
-        "description": "iO微震技术，AI定制洁齿方案，智能显示，7种洁齿模式，4小时快充",
-        "stock": 150
+        "description": "经典星战系列，精密设计，收藏价值，多零件",
+        "stock": 60,
+        "category": "玩具乐器"
     },
     {
         "id": 32,
-        "name": "Philips飞利浦 钻石系列AI智能电动牙刷APP定制洁齿方案牙龈保护",
-        "price": 1699,
-        "sales": 1980,
+        "name": "雅马哈 YAMAHA F310 民谣吉他",
+        "price": 899,
+        "sales": 1560,
         "image": "/src/assets/img/pro/10032.jpg",
-        "description": "声波技术，AI智能感知，APP定制方案，5种洁齿模式，3小时快充",
-        "stock": 140
+        "description": "入门级民谣吉他，云杉木面板，音色优美",
+        "stock": 80,
+        "category": "玩具乐器"
     },
     {
         "id": 33,
-        "name": "Dyson戴森 Supersonic吹风机智能温控负离子护发快速干发不伤发质",
-        "price": 3190,
-        "sales": 1560,
+        "name": "卡西欧 CASIO 电子琴 CT-S200",
+        "price": 699,
+        "sales": 1250,
         "image": "/src/assets/img/pro/10033.jpg",
-        "description": "智能温控，负离子技术，11万转数码马达，4种风温设定，3种风嘴",
-        "stock": 95
+        "description": "61键电子琴，多种音色，便携设计，适合初学者",
+        "stock": 100,
+        "category": "玩具乐器"
     },
     {
         "id": 34,
-        "name": "Xiaomi/小米 米家扫地机器人扫拖一体自动集尘洗拖布智能避障家用",
-        "price": 2999,
-        "sales": 2850,
+        "name": "遥控无人机 4K高清 航拍飞行器",
+        "price": 599,
+        "sales": 1890,
         "image": "/src/assets/img/pro/10034.jpg",
-        "description": "LDS激光导航，自动集尘，自动洗拖布，AI避障，5200mAh电池",
-        "stock": 180
+        "description": "4K摄像，GPS定位，智能跟随，长续航",
+        "stock": 120,
+        "category": "玩具乐器"
     },
     {
         "id": 35,
-        "name": "Roborock石头 G20S扫地机器人扫拖一体自动集尘烘干智能避障家用",
-        "price": 4599,
-        "sales": 1420,
+        "name": "儿童智能手表 4G通话 定位防水",
+        "price": 399,
+        "sales": 3250,
         "image": "/src/assets/img/pro/10035.jpg",
-        "description": "ReactiveAI 2.0避障，双螺旋胶刷，声波震动擦地，自动集尘烘干",
-        "stock": 100
+        "description": "4G通话，精准定位，防水设计，家长监控",
+        "stock": 200,
+        "category": "玩具乐器"
     },
     {
         "id": 36,
-        "name": "DJI大疆 Osmo Pocket 3云台相机一英寸CMOS4K/120fps拍摄Vlog便携",
-        "price": 4499,
-        "sales": 1250,
+        "name": "金龙鱼 食用油 5L 调和油",
+        "price": 79,
+        "sales": 9850,
         "image": "/src/assets/img/pro/10036.jpg",
-        "description": "一英寸CMOS，4K/120fps，三轴机械云台，2英寸旋转屏，166分钟续航",
-        "stock": 85
+        "description": "营养均衡，烹饪适用，大容量，家庭装",
+        "stock": 500,
+        "category": "食品生鲜"
     },
     {
         "id": 37,
-        "name": "GoPro HERO12 Black运动相机5.3K视频拍摄HyperSmooth 6.0防抖户外",
-        "price": 3498,
-        "sales": 980,
+        "name": "蒙牛 纯牛奶 250ml*24盒 整箱",
+        "price": 68,
+        "sales": 12560,
         "image": "/src/assets/img/pro/10037.jpg",
-        "description": "5.3K视频，HyperSmooth 6.0防抖，HDR照片视频，前后屏，防水10米",
-        "stock": 70
+        "description": "优质奶源，营养丰富，家庭装，保质期新鲜",
+        "stock": 800,
+        "category": "食品生鲜"
     },
     {
         "id": 38,
-        "name": "Canon/佳能 EOS R5全画幅专微相机8K视频拍摄4500万像素双核对焦",
-        "price": 25999,
-        "sales": 580,
+        "name": "五常大米 东北大米 5kg 袋装",
+        "price": 89,
+        "sales": 7560,
         "image": "/src/assets/img/pro/10038.jpg",
-        "description": "4500万像素，8K视频，双像素CMOS AF II，机身防抖，20张/秒连拍",
-        "stock": 40
+        "description": "东北五常大米，米香浓郁，口感软糯",
+        "stock": 600,
+        "category": "食品生鲜"
     },
     {
         "id": 39,
-        "name": "Nikon/尼康 Z9全画幅微单相机8K视频4500万像素堆栈式CMOS专业摄影",
-        "price": 35999,
-        "sales": 320,
+        "name": "新鲜鸡蛋 30枚 农家散养",
+        "price": 35,
+        "sales": 15200,
         "image": "/src/assets/img/pro/10039.jpg",
-        "description": "4570万像素堆栈式CMOS，8K视频，120fps连拍，3D跟踪对焦，无黑屏拍摄",
-        "stock": 25
+        "description": "农家散养，营养丰富，新鲜配送",
+        "stock": 1000,
+        "category": "食品生鲜"
     },
     {
         "id": 40,
-        "name": "Fujifilm/富士 X100VI数码相机4020万像素APS-C画幅复古旁轴设计",
-        "price": 11390,
-        "sales": 420,
+        "name": "进口牛油果 6个装 新鲜水果",
+        "price": 45,
+        "sales": 3890,
         "image": "/src/assets/img/pro/10040.jpg",
-        "description": "4020万像素APS-C，X-Trans CMOS 5 HR，经典负片滤镜，6.0档防抖",
-        "stock": 30
+        "description": "进口牛油果，营养丰富，即食成熟",
+        "stock": 300,
+        "category": "食品生鲜"
     },
     {
         "id": 41,
-        "name": "Sony/索尼 Alpha 7R V全画幅微单相机6100万像素8K视频AI对焦系统",
-        "price": 27999,
-        "sales": 380,
+        "name": "农夫山泉 天然饮用水 550ml*24瓶",
+        "price": 32,
+        "sales": 25600,
         "image": "/src/assets/img/pro/10041.jpg",
-        "description": "6100万像素，8K视频，AI对焦，8级5轴防抖，944万点EVF",
-        "stock": 28
+        "description": "天然饮用水，家庭必备，整箱装",
+        "stock": 1500,
+        "category": "食品生鲜"
     }
 ]

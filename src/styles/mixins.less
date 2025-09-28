@@ -1,50 +1,65 @@
-.flex-center(){
+.flex-center() {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.flex-start(){
+
+.flex-start() {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.flex-start-start(){
+
+.flex-start-start() {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
 }
-.flex-between(){
+
+.flex-between() {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.flex-wrap(){
+
+.flex-wrap() {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
 }
 
-.fix(){
+.fix() {
     position: fixed;
     right: 0;
     z-index: @zIndex-second;
 }
-.position-ab-tl(){
+
+.position-ab-tl() {
     position: absolute;
     top: 0;
     left: 0;
 }
-.position-ab-tr(){
+
+.position-ab-tr() {
     position: absolute;
     top: 0;
     right: 0;
 }
-.percent-wh(){
+
+.percent-wh() {
     width: 100%;
     height: 100%;
 }
-.background-image(@url){
+
+.background-image(@url) {
     background: url(@url) no-repeat center center;
     background-size: cover;
+}
+
+//字体隐藏
+.font-ellipse() {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
