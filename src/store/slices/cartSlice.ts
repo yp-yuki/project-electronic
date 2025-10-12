@@ -1,4 +1,4 @@
-import type { Product } from '@/api/types'
+import type { Product } from '@/types/apiType'
 import { createSlice, type PayloadAction } from '@reduxjs/toolkit'
 
 interface cartProduct extends Product {

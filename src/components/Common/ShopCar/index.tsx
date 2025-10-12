@@ -1,7 +1,7 @@
 import styles from './index.module.less'
 import { Typography } from 'antd'
 import { useAppDispatch, useAppSelector } from '@/hooks/hooks'
-import type { Product } from '@/api/types'
+import type { Product } from '@/types/apiType'
 import { addItem, decreaseItem } from '@/store/slices/cartSlice'
 const { Title } = Typography
 interface Props {

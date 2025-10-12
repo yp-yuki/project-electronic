@@ -1,4 +1,4 @@
-import type { Product } from '../types'
+import type { Product } from '../../types/apiType'
 
 export const cartsApi = {
     addCartItem: (item: Product[]) => {

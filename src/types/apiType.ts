@@ -2,7 +2,12 @@ export interface ApiResponse<T = any> {
     code: number
     message: string
     data: T
-    total?: number
+    pagination?:{
+        total?: number
+        totalPage?: number
+        haveNext?: boolean
+        havePrev?: boolean
+    }
 }
 export interface User {
     id: number
@@ -16,4 +21,10 @@ export interface Product {
     image: string,
     description?: string,
     stock?: number
+}
+export interface GetProductsParam{
+    page?: number,
+    limit?: number,
+    loadMoreLimit?: number
+    keywords?: string
 }

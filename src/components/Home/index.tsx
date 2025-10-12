@@ -13,6 +13,14 @@ const Home=()=>{
         <div className={`${styles.bgs} ${styles.bg1}`}></div>
         <div className={`${styles.bgs} ${styles.bg2}`}></div>
         <div className={`${styles.bgs} ${styles.bg3}`}></div>
+        <div className={styles.page1}>
+            <div>page1</div>
+            <div>page1描述描述</div>
+        </div>
+        <div className={styles.page2}>
+            <div>page2</div>
+            <div>page2描述描述</div>
+        </div>
     </div>
 }
 export default Home

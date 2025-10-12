@@ -1,6 +1,6 @@
 import { Button, Card, Col, Row, Typography } from 'antd'
 import styles from './index.module.less'
-import type { Product } from '@/api/types'
+import type { Product } from '@/types/apiType'
 import { addItem } from '@/store/slices/cartSlice'
 import { useAppDispatch } from '@/hooks/hooks'
 

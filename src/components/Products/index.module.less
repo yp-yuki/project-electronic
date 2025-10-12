@@ -1,9 +1,28 @@
 @import '@styles/variables.less';
 @import '@styles/mixins.less';
 .container{
-    .flex-wrap();
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0, 1fr));
     gap: 20px;
-    padding: @padding-lr-md;
-    padding-bottom: 30px;
+    padding: @padding-md;
+    padding-top: 0;
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: repeat(3,minmax(0, 1fr));
+    }
+    @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(2,minmax(0, 1fr));
+    }
+    @media screen and (max-width: 480px) {
+        grid-template-columns: repeat(1,minmax(0, 1fr));
+    }
+}
+.load{
+    text-align: center;
+    padding-bottom: @padding-bottom-md;
+}
+.more{
+    text-align: center;
+    font-size: @font-size-sm;
+    color: @font-color-gray;
+    padding-bottom: @padding-bottom-md;
 }
