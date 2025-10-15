@@ -1,5 +1,5 @@
 import styles from './index.module.less'
-import { Typography } from 'antd'
+import { Empty, Typography } from 'antd'
 import { useAppDispatch, useAppSelector } from '@/hooks/hooks'
 import type { Product } from '@/types/apiType'
 import { addItem, decreaseItem } from '@/store/slices/cartSlice'
@@ -43,7 +43,7 @@ const ShopCar = (props: Props) => {
                     })
                 }
             </ul>) : (<div className={styles.empty}>
-                这里什么都没有哦～
+                <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description="暂无数据"/>
             </div>)
         }
 

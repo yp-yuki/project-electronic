@@ -1,0 +1,90 @@
+@import '@/styles/variables.less';
+@import '@/styles/mixins.less';
+
+.info {
+    .flex-start-stretch();
+
+    .leftWrap {
+        margin-right: @margin-md;
+
+        img {
+            width: 380px;
+            height: 380px;
+        }
+    }
+
+    .rightWrap {
+        font-size: @font-size-base;
+        position: relative;
+
+        .saleWrap {
+            .flex-start();
+            gap: @spacing-xl;
+            color: @font-color-gray;
+
+            .price {
+                color: red;
+                font-size: 20px;
+            }
+        }
+        .tip{
+            margin-top: @margin-top-sm;
+        }
+        .specific {
+            margin-top: 20%;
+            &-wrap{
+                // font-size: @font-size-sm;
+                margin-top: @margin-top-sm;
+            }
+            &-values {
+                .flex-start();
+                flex-wrap: wrap;
+                gap: @spacing-md;
+            }
+            
+            &-specs{
+                .flex-start-center();
+                margin-bottom: @margin-sm;
+                
+            }
+            &-value {
+                border: @border-dashed-gray;
+                padding: @padding-text-box;
+                border-radius: @border-radius-sm;
+                cursor: pointer;
+
+                &:hover {
+                    .btn-active();
+                }
+            }
+
+            &-active {
+                .btn-active();
+            }
+            &-disabled{
+                .btn-disabled();
+            }
+        }
+
+        .option {
+            .flex-start-start();
+            flex-direction: column;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            &-stock{
+                color: @font-color-gray;
+                margin-bottom: 5px;
+            }
+            &-btn {
+                .flex-start();
+                color: @border-color-blue;
+                border: @border-solid-blue;
+                border-radius: @border-radius-sm;
+                padding: @padding-text-lgbox;
+                cursor: pointer;
+            }
+        }
+    }
+}

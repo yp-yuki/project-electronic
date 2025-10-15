@@ -1,5 +1,5 @@
 import PageHeader from '../Common/PageHeader'
-import ProductItem from './ProductItem'
+import ProductItem from '../ProductItem'
 import styles from './index.module.less'
 import { useState, useEffect, useCallback, useRef } from 'react'
 import { type Product } from '@/types/apiType'

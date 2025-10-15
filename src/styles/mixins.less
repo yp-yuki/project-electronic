@@ -10,10 +10,27 @@
     align-items: center;
 }
 
+.flex-center-start() {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
 .flex-start-start() {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+}
+.flex-start-center() {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-start-stretch() {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
 }
 
 .flex-between() {
@@ -55,6 +72,22 @@
 .background-image(@url) {
     background: url(@url) no-repeat center center;
     background-size: cover;
+}
+
+//active
+.btn-active() {
+    border: @border-solid-blue;
+    color: @border-color-blue;
+}
+
+.btn-disabled(){
+    cursor: not-allowed;
+    background-color: @border-color-gray;
+    color: @font-color-gray;
+    &:hover{
+        border-color: @border-color-gray;
+        color: @font-color-gray;
+    }
 }
 
 //字体隐藏

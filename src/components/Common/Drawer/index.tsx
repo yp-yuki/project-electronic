@@ -1,5 +1,5 @@
 import { Drawer } from 'antd'
-import ShopCar from '../ShopCar'
+import ShopCar from '../../ShopCar'
 import { useAppSelector, useAppDispatch } from '@/hooks/hooks'
 import { handleOpen } from '@/store/slices/cartSlice'
 

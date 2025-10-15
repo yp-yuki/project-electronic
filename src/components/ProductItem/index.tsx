@@ -3,6 +3,7 @@ import styles from './index.module.less'
 import type { Product } from '@/types/apiType'
 import { addItem } from '@/store/slices/cartSlice'
 import { useAppDispatch } from '@/hooks/hooks'
+import { useNavigate } from 'react-router-dom'
 
 const { Title } = Typography
 interface Props {
@@ -10,7 +11,16 @@ interface Props {
 }
 const ProductItem = ({ item }: Props) => {
     const dispatch = useAppDispatch()
+    const navigate = useNavigate()
     const onAddCart = (item: Product) => dispatch(addItem(item))
+    const toDetail = (item: Product) => {
+        navigate(`/mall/detail?id=${item.id}`, {
+            state: {
+                item
+            }
+        })
+
+    }
     return <Card
         key={item.id}
         className={styles.cardBody}
@@ -19,8 +29,9 @@ const ProductItem = ({ item }: Props) => {
             <img
                 style={{ height: '210px' }}
                 draggable={false}
-                alt={item.name}
+                alt={item.description}
                 src={item.image}
+                onClick={() => toDetail(item)}
             />
         }
     >
