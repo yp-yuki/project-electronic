@@ -42,7 +42,7 @@ const ShopCar = (props: Props) => {
             items.length > 0 ? (<ul className={styles.list}>
                 {
                     items.map(item => {
-                        return <li className={styles['list-item']} key={item.id}>
+                        return <li className={styles['list-item']} key={item.id + Date.now()}>
                             <div className={styles['list-item-img']}>
                                 <img src={item.image} alt="" />
                             </div>

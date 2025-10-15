@@ -21,7 +21,7 @@ const cartSlice = createSlice({
     initialState: initialState,
     reducers: {
         addItem: (state, action: PayloadAction<Product>) => {
-            const exsist = state.items.find(item => item.id === action.payload.id)
+            const exsist = state.items.find(item => (item.id === action.payload.id && item.selectedSku === action.payload.selectedSku))
             if (!exsist) {
                 state.items.push({ ...action.payload, count: 1 })
                 state.totalCount += 1
@@ -41,11 +41,11 @@ const cartSlice = createSlice({
                 state.items = state.items.filter(item => item.id !== exsist.id)
             }
         },
-        handleOpen:(state,action: PayloadAction<boolean>)=>{
+        handleOpen: (state, action: PayloadAction<boolean>) => {
             state.isOpen = action.payload
         }
     }
 })
 
-export const { addItem, decreaseItem,handleOpen } = cartSlice.actions
+export const { addItem, decreaseItem, handleOpen } = cartSlice.actions
 export default cartSlice.reducer
