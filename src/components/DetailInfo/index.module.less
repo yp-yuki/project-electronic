@@ -31,13 +31,14 @@
             margin-top: @margin-top-sm;
         }
         .specific {
-            margin-top: 20%;
+            margin-top: 15%;
             &-wrap{
                 // font-size: @font-size-sm;
                 margin-top: @margin-top-sm;
-                display: grid;
-                grid-template-columns: repeat(3,1fr);
+                display: flex;
+                flex-wrap: wrap;
                 gap: 10px;
+                white-space: nowrap;
             }
             &-values {
                 .flex-start();
