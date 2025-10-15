@@ -3,7 +3,7 @@
 
 .info {
     .flex-start-stretch();
-
+    
     .leftWrap {
         margin-right: @margin-md;
 
@@ -35,6 +35,9 @@
             &-wrap{
                 // font-size: @font-size-sm;
                 margin-top: @margin-top-sm;
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 10px;
             }
             &-values {
                 .flex-start();
@@ -44,7 +47,6 @@
             
             &-specs{
                 .flex-start-center();
-                margin-bottom: @margin-sm;
                 
             }
             &-value {
@@ -67,16 +69,12 @@
         }
 
         .option {
-            .flex-start-start();
+            .flex-start-end();
             flex-direction: column;
             width: 100%;
             position: absolute;
             bottom: 0;
             left: 0;
-            &-stock{
-                color: @font-color-gray;
-                margin-bottom: 5px;
-            }
             &-btn {
                 .flex-start();
                 color: @border-color-blue;

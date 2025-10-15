@@ -19,7 +19,7 @@ export interface Sku {
     price: number
     stock: number
 }
-export interface Value{
+export interface Value {
     name: string
     valid?: boolean
     selected?: boolean
@@ -27,10 +27,6 @@ export interface Value{
 export interface Specifications {
     name: string
     values: string[]
-}
-export interface SpecState{
-    name: string
-    values: Value[]
 }
 export interface Product {
     id: number
@@ -43,6 +39,7 @@ export interface Product {
     category: string
     specifications: Specifications[]
     skuList: Sku[]
+    selectedSku?: string
 }
 export interface GetProductsParam {
     page?: number

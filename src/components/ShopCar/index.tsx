@@ -1,17 +1,42 @@
 import styles from './index.module.less'
-import { Empty, Typography } from 'antd'
+import { Empty, Typography, Select } from 'antd'
 import { useAppDispatch, useAppSelector } from '@/hooks/hooks'
-import type { Product } from '@/types/apiType'
+import type { Product, Sku } from '@/types/apiType'
 import { addItem, decreaseItem } from '@/store/slices/cartSlice'
+import { useEffect, useState } from 'react'
 const { Title } = Typography
 interface Props {
     layout: 'page' | 'drawer'
+}
+interface OptionType {
+    value: string
+    label: string
 }
 const ShopCar = (props: Props) => {
     const items = useAppSelector(state => state.cartSlice.items)
     const dispatch = useAppDispatch()
     const addCart = (item: Product) => dispatch(addItem(item))
     const removeCart = (item: number) => dispatch(decreaseItem(item))
+
+    const setSkuList = (item: Product) => {
+        const skuArray: OptionType[] = []
+        item.skuList.forEach(val => {
+            skuArray.push({
+                value: val.specs.join('-'),
+                label: val.specs.join('-')
+            })
+        })
+        return skuArray
+    }
+    console.log(items)
+    const onChange = (value: string) => {
+        console.log(`selected ${value}`);
+    };
+
+    const onSearch = (value: string) => {
+        console.log('search:', value);
+    };
+
     return <div className={`${styles.container} ${props.layout === 'drawer' ? 'drawer-container' : ''}`}>
         {
             items.length > 0 ? (<ul className={styles.list}>
@@ -24,11 +49,15 @@ const ShopCar = (props: Props) => {
                             <div className={`${styles['list-item-info']} ${props.layout === 'drawer' ? 'drawer-list-item-title' : ''}`}>
                                 <Title title={item.name} className={styles['list-item-title']} ellipsis={{ rows: 1 }} level={5}>{item.name}</Title>
                                 <div className={styles['list-item-desc']}>
-                                    <div className={styles['list-item-wrap']}>
-                                        <div>销量：{item.sales}</div>
-                                        <div className={props.layout === 'drawer' ? 'drawer-des' : ''}>描述：{item.description}</div>
-                                    </div>
-
+                                    <Select
+                                        showSearch
+                                        placeholder="选择规格"
+                                        optionFilterProp="label"
+                                        onChange={onChange}
+                                        onSearch={onSearch}
+                                        defaultValue={item.selectedSku && item.selectedSku !== '' ? item.selectedSku : setSkuList(item)[0].value}
+                                        options={setSkuList(item)}
+                                    />
                                 </div>
                                 <div className={styles['list-item-option']}>
                                     <div className={styles['list-item-price']}>¥{item.price}</div>
@@ -43,7 +72,7 @@ const ShopCar = (props: Props) => {
                     })
                 }
             </ul>) : (<div className={styles.empty}>
-                <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description="暂无数据"/>
+                <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description="暂无数据" />
             </div>)
         }
 
