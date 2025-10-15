@@ -3,7 +3,6 @@ import { Empty, Typography, Select } from 'antd'
 import { useAppDispatch, useAppSelector } from '@/hooks/hooks'
 import type { Product, Sku } from '@/types/apiType'
 import { addItem, decreaseItem } from '@/store/slices/cartSlice'
-import { useEffect, useState } from 'react'
 const { Title } = Typography
 interface Props {
     layout: 'page' | 'drawer'
@@ -15,6 +14,7 @@ interface OptionType {
 const ShopCar = (props: Props) => {
     const items = useAppSelector(state => state.cartSlice.items)
     const dispatch = useAppDispatch()
+
     const addCart = (item: Product) => dispatch(addItem(item))
     const removeCart = (item: number) => dispatch(decreaseItem(item))
 
@@ -28,7 +28,6 @@ const ShopCar = (props: Props) => {
         })
         return skuArray
     }
-    console.log(items)
     const onChange = (value: string) => {
         console.log(`selected ${value}`);
     };
@@ -42,7 +41,7 @@ const ShopCar = (props: Props) => {
             items.length > 0 ? (<ul className={styles.list}>
                 {
                     items.map(item => {
-                        return <li className={styles['list-item']} key={item.id + Date.now()}>
+                        return <li className={styles['list-item']} key={item.id + item.selectedSku}>
                             <div className={styles['list-item-img']}>
                                 <img src={item.image} alt="" />
                             </div>

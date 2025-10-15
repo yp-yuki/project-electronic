@@ -39,7 +39,7 @@ export interface Product {
     category: string
     specifications: Specifications[]
     skuList: Sku[]
-    selectedSku?: string
+    selectedSku: string
 }
 export interface GetProductsParam {
     page?: number

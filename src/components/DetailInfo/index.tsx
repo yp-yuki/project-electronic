@@ -52,12 +52,12 @@ const Info = (props: Prop) => {
             }
         })
         setSku(updateSku)
-        const filterSku = updateSku.find(val => val.id === skuId)
+        const filterSku = updateSku.find(val => val.id === skuId)!
         setCurrentPrice(filterSku?.price || item.price)
         setCurrentStock(filterSku?.stock || item.stock)
         setCurrentProduct({
             ...item,
-            selectedSku: filterSku?.specs.join('-')
+            selectedSku: filterSku.specs.join('-')
         })
         //匹配对应的sku
     }
