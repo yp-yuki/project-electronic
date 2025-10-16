@@ -26,11 +26,10 @@ const ProductItem = ({ item }: Props) => {
         className={styles.cardBody}
         hoverable
         cover={
-            <img
-                style={{ height: '210px' }}
+            <div
+                style={{ height: '210px',background: `url(/src/assets/img/pro/${item.image}) center/cover no-repeat` }}
                 draggable={false}
-                alt={item.description}
-                src={`@/assets/img/pro/${item.image}`}
+                title={item.description}
                 onClick={() => toDetail(item)}
             />
         }
