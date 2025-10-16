@@ -4,6 +4,7 @@ import type { Product } from '@/types/apiType'
 import { addItem } from '@/store/slices/cartSlice'
 import { useAppDispatch } from '@/hooks/hooks'
 import { useNavigate } from 'react-router-dom'
+import { getImageUrl } from '@/utils/utils'
 
 const { Title } = Typography
 interface Props {
@@ -20,9 +21,6 @@ const ProductItem = ({ item }: Props) => {
             }
         })
 
-    }
-    const getImageUrl = (url: string)=>{
-        return new URL(`/src/assets/img/pro/${url}`, import.meta.url).href
     }
     return <Card
         key={item.id}

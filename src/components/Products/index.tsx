@@ -5,6 +5,7 @@ import { useState, useEffect, useCallback, useRef } from 'react'
 import { type Product } from '@/types/apiType'
 import { productApi } from '@/api/mock/products'
 import { message, Spin } from 'antd'
+import headIcon from '@assets/img/heart.png'
 
 const Products = () => {
     const [products, setProducts] = useState<Product[]>([])
@@ -59,7 +60,7 @@ const Products = () => {
         getProducts(page, false)
     }, [])
     return <div>
-        <PageHeader icon="/src/assets/img/heart.png" title="精选好物" />
+        <PageHeader icon={headIcon} title="精选好物" />
         <div className={styles.container}>
             {
                 products.map(item => {

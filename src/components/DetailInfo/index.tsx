@@ -4,6 +4,7 @@ import Title from 'antd/es/typography/Title'
 import { useEffect, useState } from 'react'
 import { useAppDispatch } from '@/hooks/hooks'
 import { addItem } from '@/store/slices/cartSlice'
+import { getImageUrl } from '@/utils/utils'
 
 interface Prop {
     item: Product
@@ -21,7 +22,7 @@ const Info = (props: Prop) => {
     console.log(item)
     useEffect(() => {
         //初始化
-        const initialSku = item.skuList.map((sku,index) => ({
+        const initialSku = item.skuList.map((sku, index) => ({
             ...sku,
             selected: index === 0
         }))
@@ -56,7 +57,7 @@ const Info = (props: Prop) => {
     }
     return <div className={styles.info}>
         <div className={styles.leftWrap}>
-            <img src={item.image} alt="" />
+            <img src={getImageUrl(item.image)} alt="" />
         </div>
         <div className={styles.rightWrap}>
             <Title level={5} title={item.name} ellipsis={{ rows: 2 }}>{item.name}</Title>
