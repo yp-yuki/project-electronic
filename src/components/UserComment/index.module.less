@@ -1,0 +1,36 @@
+@import '@/styles/variables.less';
+@import '@/styles/mixins.less';
+
+.tab-comment {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .top {
+        .flex-between();
+        margin-bottom: @margin-bottom-sm;
+
+        &-left {
+            font-size: @font-size-xxl;
+        }
+
+        &-right {
+            color: @font-color-tag;
+            font-size: @font-size-base;
+        }
+    }
+
+    .tag {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: @margin-bottom-sm;
+
+        & div {
+            .tag();
+        }
+    }
+    .opt{
+        text-align: center;
+    }
+}

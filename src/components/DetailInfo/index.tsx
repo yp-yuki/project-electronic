@@ -8,10 +8,6 @@ import { addItem } from '@/store/slices/cartSlice'
 interface Prop {
     item: Product
 }
-interface Select {
-    specname: string
-    value: string
-}
 interface SkuState extends Sku {
     selected: boolean
 }
