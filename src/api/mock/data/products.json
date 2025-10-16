@@ -5,7 +5,7 @@
         "price": 1299,
         "sales": 2850,
         "stock": 185,
-        "image": "/src/assets/img/pro/10001.jpg",
+        "image": "@/assets/img/pro/10001.jpg",
         "description": "经典AJ1设计，优质皮革，缓震技术，多色可选",
         "category": "服装鞋包",
         "specifications": [
@@ -178,7 +178,7 @@
         "price": 599,
         "sales": 3920,
         "stock": 650,
-        "image": "/src/assets/img/pro/10002.jpg",
+        "image": "@/assets/img/pro/10002.jpg",
         "description": "轻量便携，保暖性强，可折叠收纳，多色可选",
         "category": "服装鞋包",
         "specifications": [
@@ -409,7 +409,7 @@
         "price": 899,
         "sales": 1560,
         "stock": 120,
-        "image": "/src/assets/img/pro/10003.jpg",
+        "image": "@/assets/img/pro/10003.jpg",
         "description": "复古设计，舒适缓震，透气网面，时尚百搭",
         "category": "服装鞋包",
         "specifications": [
@@ -532,7 +532,7 @@
         "price": 1099,
         "sales": 980,
         "stock": 80,
-        "image": "/src/assets/img/pro/10004.jpg",
+        "image": "@/assets/img/pro/10004.jpg",
         "description": "专业篮球鞋，回弹缓震，透气包裹，多配色",
         "category": "服装鞋包",
         "specifications": [
@@ -643,7 +643,7 @@
         "price": 459,
         "sales": 2250,
         "stock": 150,
-        "image": "/src/assets/img/pro/10005.jpg",
+        "image": "@/assets/img/pro/10005.jpg",
         "description": "修身剪裁，质感面料，职场百搭，多尺码",
         "category": "服装鞋包",
         "specifications": [
@@ -763,7 +763,7 @@
         "price": 8999,
         "sales": 3560,
         "stock": 180,
-        "image": "/src/assets/img/pro/10006.jpg",
+        "image": "@/assets/img/pro/10006.jpg",
         "description": "A17 Pro芯片，钛金属设计，4800万像素主摄",
         "category": "手机数码",
         "specifications": [
@@ -890,7 +890,7 @@
         "price": 7999,
         "sales": 1920,
         "stock": 120,
-        "image": "/src/assets/img/pro/10007.jpg",
+        "image": "@/assets/img/pro/10007.jpg",
         "description": "超可靠玄武架构，灵犀通信，超光变XMAGE影像",
         "category": "手机数码",
         "specifications": [
@@ -996,7 +996,7 @@
         "price": 5999,
         "sales": 1560,
         "stock": 150,
-        "image": "/src/assets/img/pro/10008.jpg",
+        "image": "@/assets/img/pro/10008.jpg",
         "description": "徕卡Summilux镜头，专业摄影套装，双向卫星通信",
         "category": "手机数码",
         "specifications": [
@@ -1103,7 +1103,7 @@
         "price": 2999,
         "sales": 3250,
         "stock": 200,
-        "image": "/src/assets/img/pro/10009.jpg",
+        "image": "@/assets/img/pro/10009.jpg",
         "description": "HD降噪处理器，30小时续航，智能聆听",
         "category": "手机数码",
         "specifications": [
@@ -1199,7 +1199,7 @@
         "price": 1899,
         "sales": 5620,
         "stock": 300,
-        "image": "/src/assets/img/pro/10010.jpg",
+        "image": "@/assets/img/pro/10010.jpg",
         "description": "主动降噪，自适应通透模式，MagSafe充电",
         "category": "手机数码",
         "specifications": [
@@ -1273,7 +1273,7 @@
         "price": 3299,
         "sales": 2850,
         "stock": 90,
-        "image": "/src/assets/img/pro/10011.jpg",
+        "image": "@/assets/img/pro/10011.jpg",
         "description": "新一级能效，智能控制，静音运行，快速制冷热",
         "category": "家用电器",
         "specifications": [
@@ -1369,7 +1369,7 @@
         "price": 4599,
         "sales": 1920,
         "stock": 75,
-        "image": "/src/assets/img/pro/10012.jpg",
+        "image": "@/assets/img/pro/10012.jpg",
         "description": "风冷无霜，节能静音，大容量，智能温控",
         "category": "家用电器",
         "specifications": [
@@ -1488,7 +1488,7 @@
         "price": 2999,
         "sales": 3560,
         "stock": 150,
-        "image": "/src/assets/img/pro/10013.jpg",
+        "image": "@/assets/img/pro/10013.jpg",
         "description": "LDS激光导航，自动集尘，AI避障，大电量",
         "category": "家用电器",
         "specifications": [
@@ -1573,7 +1573,7 @@
         "price": 4190,
         "sales": 1250,
         "stock": 90,
-        "image": "/src/assets/img/pro/10014.jpg",
+        "image": "@/assets/img/pro/10014.jpg",
         "description": "激光探测，轻量化设计，多种吸头，60分钟续航",
         "category": "家用电器",
         "specifications": [
@@ -1658,7 +1658,7 @@
         "price": 899,
         "sales": 2980,
         "stock": 200,
-        "image": "/src/assets/img/pro/10015.jpg",
+        "image": "@/assets/img/pro/10015.jpg",
         "description": "静音设计，多功能料理，自动清洗，大容量",
         "category": "家用电器",
         "specifications": [
@@ -1765,7 +1765,7 @@
         "price": 399,
         "sales": 4250,
         "stock": 300,
-        "image": "/src/assets/img/pro/10016.jpg",
+        "image": "@/assets/img/pro/10016.jpg",
         "description": "抗皱紧致，保湿滋润，改善细纹，套装礼盒",
         "category": "美妆护肤",
         "specifications": [
@@ -1884,7 +1884,7 @@
         "price": 1080,
         "sales": 1980,
         "stock": 150,
-        "image": "/src/assets/img/pro/10017.jpg",
+        "image": "@/assets/img/pro/10017.jpg",
         "description": "修护肌底，保湿滋润，改善肤质，多重功效",
         "category": "美妆护肤",
         "specifications": [
@@ -1991,7 +1991,7 @@
         "price": 980,
         "sales": 2560,
         "stock": 180,
-        "image": "/src/assets/img/pro/10018.jpg",
+        "image": "@/assets/img/pro/10018.jpg",
         "description": "特润修护，抗老保湿，改善暗沉，夜间修护",
         "category": "美妆护肤",
         "specifications": [
@@ -2088,7 +2088,7 @@
         "price": 1540,
         "sales": 1420,
         "stock": 100,
-        "image": "/src/assets/img/pro/10019.jpg",
+        "image": "@/assets/img/pro/10019.jpg",
         "description": "PITERA精华，改善肤质，保湿修护，经典款",
         "category": "美妆护肤",
         "specifications": [
@@ -2196,7 +2196,7 @@
         "price": 890,
         "sales": 1890,
         "stock": 120,
-        "image": "/src/assets/img/pro/10020.jpg",
+        "image": "@/assets/img/pro/10020.jpg",
         "description": "肌活修护，增强肌肤免疫力，保湿维稳",
         "category": "美妆护肤",
         "specifications": [
@@ -2282,7 +2282,7 @@
         "price": 9999,
         "sales": 1560,
         "stock": 95,
-        "image": "/src/assets/img/pro/10021.jpg",
+        "image": "@/assets/img/pro/10021.jpg",
         "description": "13代酷睿i9，RTX4060独显，16GB DDR5，1TB SSD",
         "category": "电脑办公",
         "specifications": [
@@ -2414,7 +2414,7 @@
         "price": 19999,
         "sales": 580,
         "stock": 35,
-        "image": "/src/assets/img/pro/10022.jpg",
+        "image": "@/assets/img/pro/10022.jpg",
         "description": "M3 Max芯片，16英寸XDR显示屏，40核GPU",
         "category": "电脑办公",
         "specifications": [
@@ -2526,7 +2526,7 @@
         "price": 599,
         "sales": 2980,
         "stock": 200,
-        "image": "/src/assets/img/pro/10023.jpg",
+        "image": "@/assets/img/pro/10023.jpg",
         "description": "舒适打字，智能背光，多设备切换，持久续航",
         "category": "电脑办公",
         "specifications": [
@@ -2612,7 +2612,7 @@
         "price": 3299,
         "sales": 980,
         "stock": 80,
-        "image": "/src/assets/img/pro/10024.jpg",
+        "image": "@/assets/img/pro/10024.jpg",
         "description": "4K分辨率，IPS Black面板，Type-C 90W",
         "category": "电脑办公",
         "specifications": [
@@ -2697,7 +2697,7 @@
         "price": 4599,
         "sales": 1250,
         "stock": 100,
-        "image": "/src/assets/img/pro/10025.jpg",
+        "image": "@/assets/img/pro/10025.jpg",
         "description": "AMD处理器，8GB内存，512GB SSD，办公家用",
         "category": "电脑办公",
         "specifications": [
@@ -2794,7 +2794,7 @@
         "price": 3899,
         "sales": 3560,
         "stock": 120,
-        "image": "/src/assets/img/pro/10026.jpg",
+        "image": "@/assets/img/pro/10026.jpg",
         "description": "超高速SSD，自适应扳机，4K/120fps，光驱版",
         "category": "游戏娱乐",
         "specifications": [
@@ -2890,7 +2890,7 @@
         "price": 2599,
         "sales": 4280,
         "stock": 180,
-        "image": "/src/assets/img/pro/10027.jpg",
+        "image": "@/assets/img/pro/10027.jpg",
         "description": "7英寸OLED屏幕，64GB存储，便携家用",
         "category": "游戏娱乐",
         "specifications": [
@@ -2997,7 +2997,7 @@
         "price": 4199,
         "sales": 1820,
         "stock": 90,
-        "image": "/src/assets/img/pro/10028.jpg",
+        "image": "@/assets/img/pro/10028.jpg",
         "description": "12TFLOPS处理能力，4K/120fps，快速恢复",
         "category": "游戏娱乐",
         "specifications": [
@@ -3082,7 +3082,7 @@
         "price": 1699,
         "sales": 1250,
         "stock": 100,
-        "image": "/src/assets/img/pro/10029.jpg",
+        "image": "@/assets/img/pro/10029.jpg",
         "description": "雷蛇机械轴，RGB灯效，多功能控制旋钮",
         "category": "游戏娱乐",
         "specifications": [
@@ -3179,7 +3179,7 @@
         "price": 999,
         "sales": 2980,
         "stock": 150,
-        "image": "/src/assets/img/pro/10030.jpg",
+        "image": "@/assets/img/pro/10030.jpg",
         "description": "63克轻量化，HERO传感器，70小时续航",
         "category": "游戏娱乐",
         "specifications": [
@@ -3275,7 +3275,7 @@
         "price": 1699,
         "sales": 980,
         "stock": 60,
-        "image": "/src/assets/img/pro/10031.jpg",
+        "image": "@/assets/img/pro/10031.jpg",
         "description": "经典星战系列，精密设计，收藏价值，多零件",
         "category": "玩具乐器",
         "specifications": [
@@ -3350,7 +3350,7 @@
         "price": 899,
         "sales": 1560,
         "stock": 80,
-        "image": "/src/assets/img/pro/10032.jpg",
+        "image": "@/assets/img/pro/10032.jpg",
         "description": "入门级民谣吉他，云杉木面板，音色优美",
         "category": "玩具乐器",
         "specifications": [
@@ -3436,7 +3436,7 @@
         "price": 699,
         "sales": 1250,
         "stock": 100,
-        "image": "/src/assets/img/pro/10033.jpg",
+        "image": "@/assets/img/pro/10033.jpg",
         "description": "61键电子琴，多种音色，便携设计，适合初学者",
         "category": "玩具乐器",
         "specifications": [
@@ -3522,7 +3522,7 @@
         "price": 599,
         "sales": 1890,
         "stock": 120,
-        "image": "/src/assets/img/pro/10034.jpg",
+        "image": "@/assets/img/pro/10034.jpg",
         "description": "4K摄像，GPS定位，智能跟随，长续航",
         "category": "玩具乐器",
         "specifications": [
@@ -3619,7 +3619,7 @@
         "price": 399,
         "sales": 3250,
         "stock": 200,
-        "image": "/src/assets/img/pro/10035.jpg",
+        "image": "@/assets/img/pro/10035.jpg",
         "description": "4G通话，精准定位，防水设计，家长监控",
         "category": "玩具乐器",
         "specifications": [
@@ -3726,7 +3726,7 @@
         "price": 79,
         "sales": 9850,
         "stock": 500,
-        "image": "/src/assets/img/pro/10036.jpg",
+        "image": "@/assets/img/pro/10036.jpg",
         "description": "营养均衡，烹饪适用，大容量，家庭装",
         "category": "食品生鲜",
         "specifications": [
@@ -3835,7 +3835,7 @@
         "price": 68,
         "sales": 12560,
         "stock": 800,
-        "image": "/src/assets/img/pro/10037.jpg",
+        "image": "@/assets/img/pro/10037.jpg",
         "description": "优质奶源，营养丰富，家庭装，保质期新鲜",
         "category": "食品生鲜",
         "specifications": [
@@ -3932,7 +3932,7 @@
         "price": 89,
         "sales": 7560,
         "stock": 600,
-        "image": "/src/assets/img/pro/10038.jpg",
+        "image": "@/assets/img/pro/10038.jpg",
         "description": "东北五常大米，米香浓郁，口感软糯",
         "category": "食品生鲜",
         "specifications": [
@@ -4039,7 +4039,7 @@
         "price": 35,
         "sales": 15200,
         "stock": 1000,
-        "image": "/src/assets/img/pro/10039.jpg",
+        "image": "@/assets/img/pro/10039.jpg",
         "description": "农家散养，营养丰富，新鲜配送",
         "category": "食品生鲜",
         "specifications": [
@@ -4149,7 +4149,7 @@
         "price": 45,
         "sales": 3890,
         "stock": 300,
-        "image": "/src/assets/img/pro/10040.jpg",
+        "image": "@/assets/img/pro/10040.jpg",
         "description": "进口牛油果，营养丰富，即食成熟",
         "category": "食品生鲜",
         "specifications": [
@@ -4247,7 +4247,7 @@
         "price": 32,
         "sales": 25600,
         "stock": 1500,
-        "image": "/src/assets/img/pro/10041.jpg",
+        "image": "@/assets/img/pro/10041.jpg",
         "description": "天然饮用水，家庭必备，整箱装",
         "category": "食品生鲜",
         "specifications": [
