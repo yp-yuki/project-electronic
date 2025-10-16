@@ -30,7 +30,7 @@ const ProductItem = ({ item }: Props) => {
                 style={{ height: '210px' }}
                 draggable={false}
                 alt={item.description}
-                src={item.image}
+                src={`@/assets/img/pro/${item.image}`}
                 onClick={() => toDetail(item)}
             />
         }
