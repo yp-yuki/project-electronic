@@ -21,14 +21,22 @@
     justify-content: flex-start;
     align-items: flex-start;
 }
+
 .flex-start-end() {
     display: flex;
     justify-content: flex-start;
     align-items: end;
 }
+
 .flex-start-center() {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-end-center() {
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -85,22 +93,33 @@
     color: @border-color-blue;
 }
 
-.btn-disabled(){
+.btn-disabled() {
     cursor: not-allowed;
     background-color: @border-color-gray;
     color: @font-color-gray;
-    &:hover{
+
+    &:hover {
         border-color: @border-color-gray;
         color: @font-color-gray;
     }
 }
+
 //tag
-.tag(){
+.tag() {
     font-size: 14px;
     background-color: @background-color-tag;
     color: @font-color-tag;
     padding: @padding-text-box;
 }
+
+//用户评价/商品信息/推荐 标题条
+.top() {
+    .flex-between();
+    margin-bottom: @margin-bottom-sm;
+    padding-top: @padding-lg;
+    font-size: @font-size-xxl;
+}
+
 //字体隐藏
 .font-ellipse() {
     white-space: nowrap;

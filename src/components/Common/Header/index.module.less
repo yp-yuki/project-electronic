@@ -2,7 +2,7 @@
 @import '@styles/mixins.less';
 
 .header {
-    .flex-start();
+    .flex-between();
     .fix();
     top: 0;
     border-bottom: @border-sm;
@@ -19,8 +19,13 @@
             margin-right: 10px;
         }
     }
-    .shopcar{
-        font-size: @font-size-base;
+    &-right{
+        .flex-start();
+        .cart{
+            font-size: @font-size-xl;
+            color: @font-color-gray;
+            margin-left: 30px;
+        }
     }
     .menu {
         border-bottom: none;

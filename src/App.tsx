@@ -9,6 +9,7 @@ import AffixLayout from './components/AffixLayout'
 const App = () => {
   return <BrowserRouter>
     <Routes>
+      <Route path='/' element={<Home />} />
       <Route path='/home' element={<Home />} />
       <Route path='/mall/*' element={
         <AffixLayout>
@@ -28,7 +29,7 @@ const App = () => {
           </Routes>
         </AffixLayout>
       } />
-      {/* <Route path='*' element={<Navigate to='/'/>}/> */}
+      <Route path='*' element={<Navigate to='/'/>}/>
     </Routes>
   </BrowserRouter>
 }

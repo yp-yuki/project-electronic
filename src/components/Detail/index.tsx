@@ -1,4 +1,5 @@
 import Back from '../Common/BackNav'
+import AppFooter from '../Common/Footer'
 import Info from '../DetailInfo'
 import DetailTab from '../DetailTab'
 import styles from './index.module.less'
@@ -13,6 +14,7 @@ const Detail = () => {
             <Info item={item} />
             <DetailTab />
         </div>
+        <AppFooter/>
     </div>
 }
 export default Detail

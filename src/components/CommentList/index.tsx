@@ -19,8 +19,8 @@ const CommentList = (props: Prop) => {
                     <div className={styles['comment-item-userImg']}><UserOutlined /></div>
                     <div className={styles['comment-item-userComment']}>
                         <div className={styles['comment-item-username']}>{val.username}</div>
-                        <div className={styles['comment-item-info']}>{val.time}</div>
                         <div className={styles['comment-item-content']}>{val.comment}</div>
+                        <div className={styles['comment-item-info']}>{val.time}</div>
                     </div>
                 </li>
             })
