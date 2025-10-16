@@ -3,6 +3,7 @@ import styles from './index.module.less'
 import NumberTip from './NumberTip'
 import type { MouseEventHandler } from 'react'
 import { handleOpen } from '@/store/slices/cartSlice'
+import { getImageUrl } from '@/utils/utils'
 
 interface imageType {
     src: string,
@@ -15,12 +16,12 @@ const AppAffix = () => {
     const cartCount = useAppSelector(state => state.cartSlice.totalCount)
     const dispatch = useAppDispatch()
     const images: imageType[] = [{
-        src: '/src/assets/img/affix/message.png',
+        src: getImageUrl('message.png','affix'),
         title: '消息',
         num: true
     },
     {
-        src: '/src/assets/img/affix/shopcart.png',
+        src: getImageUrl('shopcart.png','affix'),
         title: '购物车',
         num: true,
         count: cartCount,
@@ -29,12 +30,12 @@ const AppAffix = () => {
         }
     },
     {
-        src: '/src/assets/img/affix/contact.png',
+        src: getImageUrl('contact.png','affix'),
         title: '联系我们',
         num: false
     },
     {
-        src: '/src/assets/img/affix/feedback.png',
+        src: getImageUrl('feedback.png','affix'),
         title: '反馈',
         num: false
     }]

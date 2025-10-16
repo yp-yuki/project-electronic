@@ -8,6 +8,6 @@ export const uniqueArray = <T, K extends keyof T>(arr: T[], key: K): T[] => {
     return Array.from(new Map(arr.map(val => [val[key], val])).values())
 }
 //图片路径转换
-export const getImageUrl = (url: string)=>{
-    return new URL(`/src/assets/img/pro/${url}`,import.meta.url).href
+export const getImageUrl = (url: string,type: string)=>{
+    return new URL(`/src/assets/img/${type}/${url}`,import.meta.url).href
 }

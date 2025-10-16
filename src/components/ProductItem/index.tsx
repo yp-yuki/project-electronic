@@ -31,7 +31,7 @@ const ProductItem = ({ item }: Props) => {
                 style={{ height: '210px' }}
                 draggable={false}
                 alt={item.description}
-                src={getImageUrl(item.image)}
+                src={getImageUrl(item.image,'pro')}
                 onClick={() => toDetail(item)}
             />
         }

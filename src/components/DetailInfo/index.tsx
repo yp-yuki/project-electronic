@@ -57,7 +57,7 @@ const Info = (props: Prop) => {
     }
     return <div className={styles.info}>
         <div className={styles.leftWrap}>
-            <img src={getImageUrl(item.image)} alt="" />
+            <img src={getImageUrl(item.image,'pro')} alt="" />
         </div>
         <div className={styles.rightWrap}>
             <Title level={5} title={item.name} ellipsis={{ rows: 2 }}>{item.name}</Title>
