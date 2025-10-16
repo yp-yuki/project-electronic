@@ -12,7 +12,7 @@ const AppHeader = () => {
         navigate('/mall/cart')
     }
     return <div className={styles.header}>
-        <div className={styles.logo} onClick={toHome}>网上商城</div>
+        <div className={styles.logo} onClick={toHome}>哆维</div>
         <div className={styles['header-right']}>
             <AppSearch />
             <ShoppingCartOutlined className={styles.cart} onClick={toShopcar} />

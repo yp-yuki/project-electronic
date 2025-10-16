@@ -1,4 +1,4 @@
-import { type Product, type Sku, type Value } from '@/types/apiType'
+import { type Product, type Sku } from '@/types/apiType'
 import styles from './index.module.less'
 import Title from 'antd/es/typography/Title'
 import { useEffect, useState } from 'react'
@@ -33,12 +33,6 @@ const Info = (props: Prop) => {
         })
         setSku(initialSku)
     }, [item.specifications, item.skuList])
-    //选中规格和其他规格状态联动
-    const getSelectedValidSpecs = () => {
-        const selectedSku = item.skuList.filter(sku => {
-            
-        })
-    }
 
     const valueClick = (skuId: string) => {
         const updateSku = sku.map(val => {
