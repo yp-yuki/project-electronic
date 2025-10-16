@@ -13,7 +13,7 @@ const slice = createSlice({
     initialState:initialState,
     reducers:{
         updateUser:(state,action:PayloadAction<any>)=>{
-            state = action.payload
+            state.name = action.payload.name
         }
     }
 })
