@@ -21,15 +21,19 @@ const ProductItem = ({ item }: Props) => {
         })
 
     }
+    const getImageUrl = (url: string)=>{
+        return new URL(`/src/assets/img/pro/${url}`, import.meta.url).href
+    }
     return <Card
         key={item.id}
         className={styles.cardBody}
         hoverable
         cover={
-            <div
-                style={{ height: '210px',background: `url(/src/assets/img/pro/${item.image}) center/cover no-repeat` }}
+            <img
+                style={{ height: '210px' }}
                 draggable={false}
-                title={item.description}
+                alt={item.description}
+                src={getImageUrl(item.image)}
                 onClick={() => toDetail(item)}
             />
         }
