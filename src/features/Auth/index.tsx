@@ -1,30 +1,24 @@
+import { Card } from 'antd'
 import styles from './index.module.scss'
-import { Card, Form, Input, Button } from 'antd'
+import Login from './Login'
+import { useState } from 'react'
+import Register from './Register'
 
-const Login = () => {
+const LoginPage = () => {
+	const [isRegister, setIsRegister] = useState<boolean>(false)
+	const handleRegister = () => {
+		setIsRegister(!isRegister)
+	}
 	return (
 		<div className={styles.login}>
 			<Card
-				title="用户登录"
+				title={isRegister ? '注册账号' : '用户登录'}
 				style={{ width: 300 }}
-				extra={<a href="#">注册账号</a>}
+				extra={
+					<a onClick={handleRegister}>{isRegister ? '登录' : '注册'}</a>
+				}
 			>
-				<Form layout="horizontal">
-					<Form.Item  name="username">
-						<Input placeholder="请输入用户名" />
-					</Form.Item>
-
-					<Form.Item name="password">
-						<Input.Password placeholder="请输入密码" />
-					</Form.Item>
-
-					<Form.Item>
-						<Button type="primary" htmlType="submit" block>
-							登录
-						</Button>
-					</Form.Item>
-				</Form>
-
+				{isRegister ? <Register /> : <Login />}
 				<div className="auth-links">
 					<a href="#">忘记密码？</a>
 				</div>
@@ -32,4 +26,4 @@ const Login = () => {
 		</div>
 	)
 }
-export default Login
+export default LoginPage

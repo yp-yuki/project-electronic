@@ -1,5 +1,5 @@
 import type { ApiResponse, GetProductsParam, Product } from '@/types/apiType'
-import mockProductsData from './data/products.json'
+import mockProductsData from './mock/products.json'
 
 export const mockProducts: Product[] = mockProductsData
 

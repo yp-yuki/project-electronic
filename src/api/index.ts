@@ -1,2 +1,2 @@
-export { cartsApi } from './mock/carts'
-export { productApi } from './mock/products'
+export { cartsApi } from './carts'
+export { productApi } from './products'
