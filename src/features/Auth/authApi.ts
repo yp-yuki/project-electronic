@@ -11,8 +11,8 @@ interface UserRecord {
 
 class MockUserDB {
 	private users: UserRecord[] = [
-		{ username: 'admin', password: 'qwer1234' },
-		{ username: 'testuser', password: '123456' }
+		{ username: 'admin', password: '@Qwer1234' },
+		{ username: 'testuser', password: '@Q123456' }
 	]
 	findUserByUsername(username: string): UserRecord | undefined {
 		return this.users.find((u) => u.username === username)
