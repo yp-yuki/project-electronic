@@ -4,19 +4,32 @@ interface UserInfo {
 	username: string
 	token?: string
 }
-interface AuthRequest {
+interface UserRecord {
 	username: string
 	password: string
 }
-const userList: AuthRequest[] = [
-	{ username: 'admin', password: 'qwer1234' },
-	{ username: 'testuser', password: '123456' }
-]
-export const loginApi = async (
-	data: AuthRequest
-): Promise<ApiResponse<UserInfo>> => {
+
+class MockUserDB {
+	private users: UserRecord[] = [
+		{ username: 'admin', password: 'qwer1234' },
+		{ username: 'testuser', password: '123456' }
+	]
+	findUserByUsername(username: string): UserRecord | undefined {
+		return this.users.find((u) => u.username === username)
+	}
+	createUser(userData: UserRecord): UserRecord {
+		this.users.push(userData)
+		return userData
+	}
+}
+
+const userDB = new MockUserDB()
+export const loginApi = async (data: {
+	username: string
+	password: string
+}): Promise<ApiResponse<UserInfo>> => {
 	await new Promise((resolve) => setTimeout(resolve, 800))
-	const user = userList.find((u) => u.username === data.username)
+	const user = userDB.findUserByUsername(data.username)
 	if (!user) {
 		throw {
 			code: 404,
@@ -41,11 +54,12 @@ export const loginApi = async (
 	}
 }
 
-export const registerApi = async (
-	data: AuthRequest
-): Promise<ApiResponse<UserInfo>> => {
+export const registerApi = async (data: {
+	username: string
+	password: string
+}): Promise<ApiResponse<UserInfo>> => {
 	await new Promise((resolve) => setTimeout(resolve, 800))
-	const user = userList.find((u) => u.username === data.username)
+	const user = userDB.findUserByUsername(data.username)
 	if (user) {
 		throw {
 			code: 409,
@@ -53,7 +67,7 @@ export const registerApi = async (
 			data: null as never
 		}
 	}
-	userList.push(data)
+	userDB.createUser(data)
 	return {
 		code: 201,
 		message: '注册成功',
