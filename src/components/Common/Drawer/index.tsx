@@ -1,6 +1,6 @@
 import { Drawer } from 'antd'
 import ShopCar from '@/features/ShopCar'
-import { useAppSelector, useAppDispatch } from '@/hooks/hooks'
+import { useAppSelector, useAppDispatch } from '@/hooks'
 import { handleOpen } from '@/store/slices/cartSlice'
 
 const AppDrawer = () => {

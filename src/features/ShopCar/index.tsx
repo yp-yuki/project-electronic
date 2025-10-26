@@ -1,6 +1,6 @@
 import styles from './index.module.scss'
 import { Empty, Typography, Select } from 'antd'
-import { useAppDispatch, useAppSelector } from '@/hooks/hooks'
+import { useAppDispatch, useAppSelector } from '@/hooks'
 import type { Product } from '@/types/apiType'
 import { addItem, decreaseItem } from '@/store/slices/cartSlice'
 const { Title } = Typography

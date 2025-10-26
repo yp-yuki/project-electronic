@@ -1,4 +1,4 @@
-import { useAppDispatch, useAppSelector } from '@/hooks/hooks'
+import { useAppDispatch, useAppSelector } from '@/hooks'
 import styles from './index.module.scss'
 import NumberTip from './NumberTip'
 import type { MouseEventHandler } from 'react'

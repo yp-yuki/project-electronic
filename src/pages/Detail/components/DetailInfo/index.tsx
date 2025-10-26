@@ -2,7 +2,7 @@ import { type Product, type Sku } from '@/types/apiType'
 import styles from './index.module.scss'
 import Title from 'antd/es/typography/Title'
 import { useEffect, useState } from 'react'
-import { useAppDispatch } from '@/hooks/hooks'
+import { useAppDispatch } from '@/hooks'
 import { addItem } from '@/store/slices/cartSlice'
 import { getImageUrl } from '@/utils/utils'
 

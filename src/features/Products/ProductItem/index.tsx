@@ -2,7 +2,7 @@ import { Button, Card, Col, Row, Typography } from 'antd'
 import styles from './index.module.scss'
 import type { Product } from '@/types/apiType'
 import { addItem } from '@/store/slices/cartSlice'
-import { useAppDispatch } from '@/hooks/hooks'
+import { useAppDispatch } from '@/hooks'
 import { useNavigate } from 'react-router-dom'
 import { getImageUrl } from '@/utils/utils'
 

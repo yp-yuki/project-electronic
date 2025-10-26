@@ -9,10 +9,7 @@ export interface ApiResponse<T = unknown> {
         havePrev?: boolean
     }
 }
-export interface User {
-    id: number
-    name: string
-}
+
 export interface Sku {
     id: string
     specs: string[]
