@@ -1,0 +1,45 @@
+@use '@/styles/variables' as var;
+@use '@/styles/mixins' as mixins;
+
+.comment {
+    font-size:var.$font-size-base;
+    margin-bottom: 0;
+
+    &-item {
+        @include mixins.flex(flex-start, flex-start);
+
+        margin-bottom:var.$margin-bottom-sm;
+
+        &-userImg {
+            color: #b0b2b5;
+            font-size: 30px;
+            width: 40px;
+            height: 40px;
+            background: #eeeeee;
+            border-radius:var.$border-radius-circle;
+            text-align: center;
+            line-height: 40px;
+            margin-right:var.$margin-right-basic;
+        }
+
+        &-userComment {
+            @include mixins.flex(flex-start, flex-start);
+
+            flex-direction: column;
+        }
+
+        &-username,
+        &-info,
+        &-content {
+            line-height:var.$line-height-base;
+        }
+
+        &-info {
+            color:var.$font-color-gray;
+        }
+
+        &-content {
+            margin-top: 8px;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@use '@/styles/variables' as var;
+@use '@/styles/mixins' as mixins;
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0, 1fr));
+    gap: 20px;
+    padding:var.$padding-md;
+    padding-top: 0;
+
+   @media screen and (width <= 1024px) {
+        grid-template-columns: repeat(3,minmax(0, 1fr));
+    }
+
+   @media screen and (width <= 768px) {
+        grid-template-columns: repeat(2,minmax(0, 1fr));
+    }
+
+   @media screen and (width <= 480px) {
+        grid-template-columns: repeat(1,minmax(0, 1fr));
+    }
+}
+
+.load{
+    text-align: center;
+    padding-bottom:var.$padding-bottom-md;
+}
+
+.more{
+    text-align: center;
+    font-size:var.$font-size-sm;
+    color:var.$font-color-gray;
+    padding-bottom:var.$padding-bottom-md;
+}

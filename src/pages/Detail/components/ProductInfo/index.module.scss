@@ -1,0 +1,41 @@
+@use '@/styles/variables' as var;
+@use '@/styles/mixins' as mixins;
+
+.productInfo{
+    font-size:var.$font-size-base;
+
+    .top{
+        @include mixins.top;
+    }
+
+    .content{
+        margin-top: 30px;
+
+        &-item{
+            @include mixins.flex(flex-start, center);
+
+            line-height:var.$line-height-base;
+            margin: 8px 0;
+        }
+
+        &-name{
+            min-width: 84px;
+            color: rgb(0 0 0 / 50%);
+            white-space: nowrap;
+        }
+
+        &-value{
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .image{
+        text-align: center;
+        margin-top: 30px;
+
+        & img{
+            width: 700px;
+        }
+    }
+}

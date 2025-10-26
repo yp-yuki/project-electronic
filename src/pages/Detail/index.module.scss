@@ -1,0 +1,13 @@
+@use '@/styles/variables' as var;
+@use '@/styles/mixins' as mixins;
+
+.detail{
+    .container{
+        background:var.$background-color-basic;
+        margin: 0 var.$margin-lg;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

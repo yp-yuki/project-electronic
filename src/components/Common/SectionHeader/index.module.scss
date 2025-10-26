@@ -1,0 +1,16 @@
+@use '@/styles/variables' as var;
+@use '@/styles/mixins' as mixins;
+
+.container {
+	@include mixins.flex(flex-start, center);
+
+	margin: var.$margin-md 0;
+}
+
+.icon {
+	width: var.$img-width-md;
+	height: var.$img-height-md;
+	border-radius: var.$border-radius-circle;
+	background-color: #ff003615;
+	margin-right: 10px;
+}

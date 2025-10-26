@@ -1,0 +1,39 @@
+@use '@/styles/variables' as var;
+@use '@/styles/mixins' as mixins;
+
+.header {
+	@include mixins.flex(space-between, center);
+	@include mixins.position(fixed,$right: 0,$top: 0,$z-index: var.$zIndex-second);
+	border-bottom: var.$border-sm;
+	height: var.$height-h;
+	width: 100%;
+	background-color: var.$background-color-basic;
+	padding: var.$padding-lr-md;
+
+	.logo {
+		margin-right: 60px;
+		white-space: nowrap;
+		cursor: pointer;
+
+		@media screen and (width <= 450px) {
+			margin-right: 10px;
+		}
+	}
+
+	&-right {
+		@include mixins.flex(flex-start, center);
+
+		.cart {
+			font-size: var.$font-size-xl;
+			color: var.$font-color-gray;
+			margin-left: 30px;
+		}
+	}
+
+	.menu {
+		border-bottom: none;
+		height: 100%;
+		line-height: var.$height-h;
+		flex-grow: 1;
+	}
+}

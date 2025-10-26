@@ -1,0 +1,10 @@
+@use '@/styles/variables' as var;
+@use '@/styles/mixins' as mixins;
+
+.footer{
+    @include mixins.flex(center,center);
+
+    height: 60px;
+    background-color: #000000;
+    color: rgb(153 153 153);
+}

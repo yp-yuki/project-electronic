@@ -1,0 +1,31 @@
+@use '@/styles/variables' as var;
+@use '@/styles/mixins' as mixins;
+
+.container {
+    @include mixins.flex(center,center);
+
+    .carouselCard{
+        height: 400px;
+    }
+
+    :global {
+        .ant-carousel{
+            width: 100%;
+        }
+
+        .slick-list,
+        .slick-track,
+        .slick-slide,
+        .slick-slide>div,
+        .slick-slide>div>div,
+        .slick-slide>div>div>img {
+            height: 100%;
+        }
+
+        .slick-slide>div>div>img{
+            width: 100%;
+            object-fit: cover;
+            object-position: 70%;
+        }
+    }
+}

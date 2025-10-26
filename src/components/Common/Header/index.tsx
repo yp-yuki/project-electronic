@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import { ShoppingCartOutlined } from '@ant-design/icons'
-import styles from './index.module.less'
+import styles from './index.module.scss'
 import AppSearch from './Search'
 
 const AppHeader = () => {

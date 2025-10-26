@@ -1,0 +1,35 @@
+@use '@/styles/variables' as var;
+@use '@/styles/mixins' as mixins;
+
+.affix{
+    @include mixins.position(fixed,$right: 0,$bottom: 10%,$z-index: var.$zIndex-second);
+    background-color:var.$background-color-basic;
+    border-radius: 12px 0 0 12px;
+    border:var.$border-solid-gray;
+    border-right: none;
+}
+
+.icon{
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10px 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+.num{
+    min-width: 14px;
+    height: 14px;
+    line-height: 14px;
+    position: absolute;
+    top: -4px;
+    right: 0;
+    background-color: #ff5000;
+    border-radius: 1000px;
+    color:var.$background-color-basic;
+    font-size: 10px;
+    text-align: center;
+}

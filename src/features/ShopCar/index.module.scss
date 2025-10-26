@@ -1,0 +1,94 @@
+@use '@/styles/variables' as var;
+@use '@/styles/mixins' as mixins;
+
+.container {
+    padding:var.$padding-lr-md;
+
+    .list-item {
+        @include mixins.flex(flex-start, center);
+
+        padding:var.$padding-sm;
+        background-color:var.$background-color-basic;
+        border-radius:var.$border-radius-basic;
+        margin-bottom:var.$margin-lg;
+
+        &-img {
+            width: 80px;
+            height: 80px;
+            margin-right:var.$margin-lg;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &-info {
+            @include mixins.flex(flex-start,flex-start);
+
+            flex-direction: column;
+            flex: 1;
+            font-size:var.$font-size-sm;
+
+            &>* {
+                width: 100%;
+            }
+        }
+
+        &-option {
+            @include mixins.flex(space-between, center);
+        }
+
+        &-count {
+            padding:var.$padding-xs;
+        }
+
+        &-opt {
+            @include mixins.flex(space-between,center);
+
+            .btn {
+                width: 20px;
+                height: 20px;
+                border-radius:var.$border-radius-half;
+                border: 1px solid var.$border-color-gray;
+                font-size:var.$font-size-xxl;
+                color:var.$font-color-gray;
+
+                @include mixins.flex(center, center);
+
+                cursor: pointer;
+                transition:var.$transition-basic;
+
+                &:hover {
+                    border-color:var.$border-color-blue;
+                    color:var.$border-color-blue;
+                }
+            }
+        }
+
+        &-price {
+            color: red;
+        }
+    }
+
+    .empty {
+        @include mixins.flex(center, center);
+
+        height:var.$height-min-window;
+        color:var.$font-color-gray;
+    }
+}
+
+:global {
+    .drawer-container {
+        padding: 0 10px;
+
+        .drawer-list-item-title{
+            width: calc(100% - 80px);
+        }
+    }
+
+    .drawer-des{
+        @include mixins.font-ellipse;
+    }
+}

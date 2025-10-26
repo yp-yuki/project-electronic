@@ -1,0 +1,101 @@
+@use '@/styles/variables' as var;
+@use '@/styles/mixins' as mixins;
+
+.info {
+	@include mixins.flex(flex-start, stretch);
+
+	.leftWrap {
+		margin-right: var.$margin-md;
+
+		img {
+			width: 380px;
+			height: 380px;
+		}
+	}
+
+	.rightWrap {
+		font-size: var.$font-size-base;
+		position: relative;
+
+		.saleWrap {
+			@include mixins.flex(flex-start, center);
+
+			gap: var.$spacing-xl;
+			color: var.$font-color-gray;
+
+			.price {
+				color: red;
+				font-size: var.$font-size-xxl;
+			}
+		}
+
+		.tip {
+			margin-top: var.$margin-top-sm;
+		}
+
+		.specific {
+			margin-top: 15%;
+
+			&-wrap {
+				// font-size:var.$font-size-sm;
+				margin-top: var.$margin-top-sm;
+				display: flex;
+				flex-wrap: wrap;
+				gap: 10px;
+				white-space: nowrap;
+			}
+
+			&-values {
+				@include mixins.flex(
+					flex-start,
+					center,
+					$flex-wrap: wrap,
+					$gap: var.$spacing-md
+				);
+			}
+
+			&-specs {
+				@include mixins.flex(flex-start, center);
+			}
+
+			&-value {
+				border: var.$border-dashed-gray;
+				padding: var.$padding-text-box;
+				border-radius: var.$border-radius-sm;
+				cursor: pointer;
+
+				&:hover {
+					@include mixins.btn-active;
+				}
+			}
+
+			&-active {
+				@include mixins.btn-active;
+			}
+
+			&-disabled {
+				@include mixins.btn-disabled;
+			}
+		}
+
+		.option {
+			@include mixins.flex(flex-start, flex-end);
+
+			flex-direction: column;
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+
+			&-btn {
+				@include mixins.flex(flex-start, center);
+
+				color: var.$border-color-blue;
+				border: var.$border-solid-blue;
+				border-radius: var.$border-radius-sm;
+				padding: var.$padding-text-lgbox;
+				cursor: pointer;
+			}
+		}
+	}
+}

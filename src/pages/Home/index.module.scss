@@ -1,0 +1,85 @@
+@use '@/styles/variables' as var;
+@use '@/styles/mixins' as mixins;
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+    nav {
+        @include mixins.position(absolute,$top: 0,$right: 0);
+        @include mixins.flex(center, center);
+
+        top: 10px;
+        right: 10px;
+        gap: 5px;
+        color: #c7c3c3;
+        font-size:var.$font-size-base;
+        z-index:var.$zIndex-second;
+
+        div{
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:hover{
+               color: #ffffff 
+            }
+        }
+    }
+}
+
+.bgs {
+    @include mixins.position(absolute, $top: 0,$left: 0);
+    @include mixins.size;
+
+    animation: slide 12s infinite;
+    opacity: 0;
+
+    &.bg1 {
+        @include mixins.background-image('@/assets/img/bg/bg1.jpg');
+
+        animation-delay: 0s;
+    }
+
+    &.bg2 {
+        @include mixins.background-image('@/assets/img/bg/bg2.jpg');
+
+        animation-delay: 4s;
+    }
+
+    &.bg3 {
+        @include mixins.background-image('@/assets/img/bg/bg3.jpg');
+
+        animation-delay: 8s;
+    }
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    30% {
+        transform: scale(1.1);
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 0;
+        transform: scale(1.15);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+}

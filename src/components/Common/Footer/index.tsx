@@ -1,4 +1,4 @@
-import styles from './index.module.less'
+import styles from './index.module.scss'
 
 const AppFooter = ()=>{
     return <div className={styles.footer}>CopyRight@Yuki Yan 2025</div>

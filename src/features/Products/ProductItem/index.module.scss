@@ -1,0 +1,25 @@
+@use '@/styles/variables' as var;
+@use '@/styles/mixins' as mixins;
+
+.cardBody{
+    height: 300px;
+}
+
+:global {
+    .ant-card .ant-card-body {
+        padding:var.$padding-md;
+    }
+
+    .ant-card .ant-card-cover {
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .ant-card .ant-card-cover img {
+        transition:var.$transition-basic;
+    }
+
+    .ant-card .ant-card-cover:hover img {
+        transform: scale(1.05);
+    }
+}

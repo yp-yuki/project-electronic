@@ -1,0 +1,11 @@
+@use '@/styles/variables' as var;
+
+.tab-title{
+    :global(.ant-anchor){
+        font-size:var.$font-size-lg;
+    }
+
+    :global(.ant-affix){
+        background-color:var.$background-color-basic;
+    }
+}

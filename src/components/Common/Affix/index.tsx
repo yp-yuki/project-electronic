@@ -1,5 +1,5 @@
 import { useAppDispatch, useAppSelector } from '@/hooks/hooks'
-import styles from './index.module.less'
+import styles from './index.module.scss'
 import NumberTip from './NumberTip'
 import type { MouseEventHandler } from 'react'
 import { handleOpen } from '@/store/slices/cartSlice'

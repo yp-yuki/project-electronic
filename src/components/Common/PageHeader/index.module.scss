@@ -1,0 +1,19 @@
+@use '@/styles/variables' as var;
+@use '@/styles/mixins' as mixins;
+
+.top {
+	height: 40px;
+	background-color: var.$background-color-basic;
+	margin-bottom: var.$margin-top-basic;
+
+	@include mixins.flex(flex-start, center);
+
+	.back {
+		font-size: var.$font-size-base;
+
+		&:hover {
+			color: var.$font-color-gray;
+			cursor: pointer;
+		}
+	}
+}

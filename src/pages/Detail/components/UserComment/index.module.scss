@@ -1,0 +1,38 @@
+@use '@/styles/variables' as var;
+@use '@/styles/mixins' as mixins;
+
+.tab-comment {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 30px;
+    border-bottom:var.$border-solid-gray;
+
+    .top {
+        @include mixins.top;
+
+        &-left {
+            font-size:var.$font-size-xxl;
+        }
+
+        &-right {
+            color:var.$font-color-tag;
+            font-size:var.$font-size-base;
+        }
+    }
+
+    .tag {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom:var.$margin-bottom-sm;
+
+        & div {
+            @include mixins.tag;
+        }
+    }
+
+    .opt{
+        text-align: center;
+    }
+}

@@ -34,6 +34,5 @@ export default defineConfig({
     modules: {
       localsConvention: 'camelCase'
     }
-  },
-
+  }
 })

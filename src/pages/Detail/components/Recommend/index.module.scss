@@ -1,0 +1,30 @@
+@use '@/styles/variables' as var;
+@use '@/styles/mixins' as mixins;
+
+.top {
+    @include mixins.top;
+
+    margin-bottom:var.$margin-bottom-sm;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+
+    &-refresh {
+        color:var.$font-color-blue;
+        text-align: right;
+
+        @include mixins.flex(flex-end, center);
+
+        margin-bottom:var.$margin-bottom-sm;
+    }
+
+    &-btn{
+        @include mixins.flex(flex-start, center);
+
+        gap: 5px;
+        cursor: pointer;
+    }
+}

@@ -1,14 +1,16 @@
-import styles from './index.module.less'
-interface Props {
-    title?: string,
-    describe?: string,
-    icon?: string
+import { useNavigate } from 'react-router-dom'
+import {LeftOutlined} from '@ant-design/icons'
+import styles from './index.module.scss'
+const Back = ()=>{
+    const navigate = useNavigate()
+    const back = () => {
+        navigate(-1)
+    }
+    return <div className={styles.top}>
+            <div className={styles.back} onClick={back}>
+                <LeftOutlined />
+                <span>返回</span>
+            </div>
+        </div>
 }
-const PageHeader = (prop: Props) => {
-    return <div className={styles.container}>
-        <img className={styles.icon} src={prop.icon} alt="" />
-        <div>{prop.title}</div>
-        <div>{prop.describe}</div>
-    </div>
-}
-export default PageHeader
+export default Back

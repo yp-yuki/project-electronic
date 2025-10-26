@@ -4,7 +4,7 @@ import cartSlice from './slices/cartSlice'
 export const store = configureStore({
     reducer:{
         userSlice:userSlice,
-        cartSlice: cartSlice,
+        cartSlice: cartSlice
     },
     devTools: true,
 })
